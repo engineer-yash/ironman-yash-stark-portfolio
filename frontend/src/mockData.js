@@ -167,9 +167,9 @@ export const jarvisResponses = {
     "His proficiency in modern web technologies rivals your expertise in advanced robotics."
   ],
   projects: [
-    "The SimpleTix platform - think of it as the Mark 50 of ticketing systems, adaptive and highly responsive.",
     "SpectrOm'23 was like building the first Arc Reactor - a breakthrough that changed everything.",
-    "The Dairy Farm Management System earned him national recognition, much like your first public appearance as Iron Man."
+    "The Dairy Farm Management System earned him national recognition, much like your first public appearance as Iron Man.",
+    "His project portfolio demonstrates the same innovation I observe in your suit iterations - continuous improvement and adaptation."
   ]
 };
 
