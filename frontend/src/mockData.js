@@ -130,7 +130,8 @@ export const certifications = [
     date: "Mar 2024 – Apr 2024",
     type: "Certificate",
     description: "Recognized for creating high-quality technical blog content",
-    links: ["Blog1", "Blog2", "Blog3"]
+    links: ["Blog1", "Blog2", "Blog3"],
+    certificateLink: "https://drive.google.com/file/d/1-dFtymQDIBHFVuMfNJkFyAxYMPFvDjUK/view?usp=drivesdk"
   },
   {
     id: 2,
@@ -138,7 +139,8 @@ export const certifications = [
     issuer: "InfoLabz",
     date: "July 2023 – Aug 2023", 
     type: "Internship Certificate",
-    description: "Completed intensive React JS training and practical project development"
+    description: "Completed intensive React JS training and practical project development",
+    certificateLink: "https://drive.google.com/file/d/10kU2_7Am3sMfTXttUpLOk6J2SdAyQ41k/view?usp=drivesdk"
   },
   {
     id: 3,
@@ -146,7 +148,8 @@ export const certifications = [
     issuer: "Academic Institution",
     date: "Aug 2022 – May 2024",
     type: "Specialization Certificate", 
-    description: "Advanced coursework in AI/ML concepts and practical implementation"
+    description: "Advanced coursework in AI/ML concepts and practical implementation",
+    certificateLink: "https://drive.google.com/file/d/10L3D90IvDTWGWpAw-6fRRSjxLYJir7uD/view?usp=drivesdk"
   }
 ];
 
