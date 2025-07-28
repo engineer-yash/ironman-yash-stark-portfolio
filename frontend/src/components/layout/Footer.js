@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="arc-reactor">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">YG</span>
+                  <span className="text-white font-bold text-sm">YG</span>
                 </div>
               </div>
               <div>
