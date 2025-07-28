@@ -16,22 +16,22 @@
   --border-subtle: rgba(255, 255, 255, 0.25);
   --border-medium: rgba(255, 255, 255, 0.4);
   
-  /* MAIN ACCENT COLORS - Brand Colors Only */
-  --brand-primary: #00FFD1;
-  --brand-hover: rgba(0, 255, 209, 0.1);
-  --brand-active: #6FD2C0;
+  /* MAIN ACCENT COLORS - Iron Man Theme */
+  --brand-primary: #DC143C;        /* Iron Man Red */
+  --brand-hover: rgba(220, 20, 60, 0.1);
+  --brand-active: #B22222;
   
   /* Arc Reactor Blue */
   --arc-blue: #00D4FF;
   --arc-blue-glow: rgba(0, 212, 255, 0.3);
   
   /* Iron Man Red/Gold */
-  --iron-red: #FF0000;
+  --iron-red: #DC143C;
   --iron-gold: #FFD700;
   
-  /* JARVIS Interface */
-  --jarvis-green: #00FF41;
-  --jarvis-glow: rgba(0, 255, 65, 0.2);
+  /* JARVIS Interface - Iron Man Theme */
+  --jarvis-green: #FFD700;         /* Gold instead of green */
+  --jarvis-glow: rgba(255, 215, 0, 0.2);
 }
 
 /* Font Import */
