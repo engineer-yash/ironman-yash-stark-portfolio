@@ -38,12 +38,12 @@ export const skills = {
 export const experience = [
   {
     id: 1,
-    title: "Software Engineer Intern",
+    title: "Software Engineer Intern", 
     company: "The One Technologies",
     location: "Ahmedabad, Gujarat",
     duration: "Jan 2024 – Oct 2024",
     type: "Internship",
-    description: "Worked on SimpleTix, a platform for selling tickets, managing registrations, and tracking real-time event attendance.",
+    description: "Worked on event management platforms, focusing on ticketing systems, registration management, and real-time attendance tracking solutions.",
     achievements: [
       "Delivered 20+ tasks in JIRA including bug fixes and front-end/back-end enhancements within weekly sprint deadlines, improving stability and reducing UI glitches by 15%",
       "Built RESTful APIs using ASP.NET Core integrated with SQL Server, improving backend response time by 10%",
