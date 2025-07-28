@@ -169,66 +169,71 @@ body {
   letter-spacing: 0; 
 }
 
-/* Button Components - Sharp Edges */
+/* Button Components - Iron Man Style */
 .btn-primary {
-  background: var(--brand-primary);
-  color: #000000;
-  border: none;
-  border-radius: 0px;
-  padding: 14px 24px;
-  font-size: 18px;
-  font-weight: 500;
+  background: linear-gradient(135deg, var(--iron-red) 0%, #B22222 100%);
+  color: #FFFFFF;
+  border: 2px solid var(--iron-gold);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  min-height: 56px;
+  transition: all 0.3s ease;
+  min-height: 48px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
   line-height: 1.2;
-  letter-spacing: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
 }
 
 .btn-primary:hover {
-  background: var(--brand-hover);
-  color: var(--brand-primary);
-  box-shadow: 0 0 20px var(--brand-active);
+  background: linear-gradient(135deg, #B22222 0%, var(--iron-red) 100%);
+  border-color: var(--iron-gold);
+  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-primary:active {
-  background: var(--brand-active);
-  transform: scale(0.98);
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(220, 20, 60, 0.3);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-  border: none;
-  border-radius: 0px;
-  padding: 14px 24px;
-  font-size: 18px;
-  font-weight: 500;
+  background: transparent;
+  color: var(--iron-gold);
+  border: 2px solid var(--iron-gold);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  min-height: 56px;
+  transition: all 0.3s ease;
+  min-height: 48px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: center;
+  gap: 8px;
   line-height: 1.2;
-  letter-spacing: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .btn-secondary:hover {
-  background: #FFFFFF;
+  background: var(--iron-gold);
   color: #000000;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-secondary:active {
-  background: #F0F0F0;
-  transform: scale(0.98);
+  transform: translateY(0);
 }
 
 /* Arc Reactor Glow Effect */
