@@ -5,8 +5,8 @@ export const personalInfo = {
   title: "Software Engineer & Full Stack Developer",
   tagline: "Genius, Billionaire, Playboy, Philanthropist... and Full Stack Developer",
   location: "Gujarat, India",
-  email: "yash.gohel@example.com",
-  phone: "+91 XXXXX XXXXX",
+  email: "gohelyash11@gmail.com",
+  phone: "+91 9409447069",
   profileImage: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/jg7d8t3b_passportSize.jpg",
   bio: "Self-motivated Full Stack Developer / Software Engineer with hands-on experience in .NET Core, ASP.NET MVC, React JS, and SQL Server. Completed 5+ web projects, achieving 95%+ bug fixes and 40% performance gains. I value smart work, patience, and enjoy learning new technologies to build scalable, responsive applications.",
   starkBio: "Like Tony Stark, I build innovative solutions that push the boundaries of technology. My arc reactor? High-performance web applications. My suit? Clean, efficient code."
