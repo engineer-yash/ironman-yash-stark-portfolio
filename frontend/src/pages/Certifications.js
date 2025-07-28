@@ -90,21 +90,38 @@ const Certifications = () => {
                       <div className="space-y-2">
                         <h4 className="text-sm font-semibold text-brand-primary">Related Resources:</h4>
                         <div className="flex flex-wrap gap-2">
-                          {cert.links.map((link, linkIndex) => (
-                            <button
-                              key={linkIndex}
-                              className="px-3 py-1 bg-bg-secondary border border-brand-primary rounded text-sm text-white hover:bg-brand-hover transition-colors"
-                            >
-                              {link}
-                            </button>
-                          ))}
+                          {cert.links.map((link, linkIndex) => {
+                            let linkUrl = '#';
+                            if (link === 'Blog1') linkUrl = socialLinks.blog1;
+                            else if (link === 'Blog2') linkUrl = socialLinks.blog2;
+                            else if (link === 'Blog3') linkUrl = socialLinks.blog3;
+                            
+                            return (
+                              <a
+                                key={linkIndex}
+                                href={linkUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-3 py-1 bg-bg-secondary border border-brand-primary rounded text-sm text-white hover:bg-brand-hover transition-colors"
+                              >
+                                {link}
+                              </a>
+                            );
+                          })}
                         </div>
                       </div>
                     )}
 
-                    <div className="flex items-center text-brand-primary cursor-pointer hover:text-brand-active transition-colors">
-                      <span className="text-sm">View Certificate</span>
-                      <ExternalLink className="w-4 h-4 ml-2" />
+                    <div className="flex items-center cursor-pointer hover:text-brand-active transition-colors">
+                      <a
+                        href={cert.certificateLink || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-brand-primary hover:text-brand-active transition-colors"
+                      >
+                        <span className="text-sm">View Certificate</span>
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
                     </div>
                   </div>
                 </div>
