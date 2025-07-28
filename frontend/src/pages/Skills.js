@@ -167,7 +167,7 @@ const Skills = () => {
               <div key={index} className="hud-element p-6 dark-hover">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center">
-                    <Wrench className="w-6 h-6 text-black" />
+                    <Wrench className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="heading-3 text-white mb-2">{concept}</h3>
