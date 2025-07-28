@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Award, Calendar, ExternalLink, Trophy, Star, CheckCircle } from 'lucide-react';
-import { certifications } from '../mockData';
+import { certifications, socialLinks } from '../mockData';
 import { useJarvis } from '../context/JarvisContext';
 
 const Certifications = () => {
