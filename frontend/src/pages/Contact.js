@@ -81,7 +81,7 @@ const Contact = () => {
             <div className="jarvis-interface p-12 rounded max-w-2xl mx-auto">
               <div className="arc-reactor mb-8">
                 <div className="w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center mx-auto">
-                  <Send className="w-12 h-12 text-black" />
+                  <Send className="w-12 h-12 text-white" />
                 </div>
               </div>
               <h1 className="display-medium text-brand-primary mb-6">Message Sent Successfully</h1>
