@@ -161,8 +161,8 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`hud-element p-6 cursor-pointer transition-all duration-300 ${
-                  selectedProject === index ? 'ring-2 ring-brand-primary' : ''
+                className={`hud-element p-6 cursor-pointer transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-brand-primary/30 ${
+                  selectedProject === index ? 'ring-2 ring-brand-primary shadow-xl shadow-brand-primary/40' : ''
                 } dark-hover`}
                 onClick={() => handleProjectSelect(index)}
               >
