@@ -187,8 +187,8 @@ export const socialLinks = {
   linkedin: "https://linkedin.com/in/yashgohel",
   email: "yash.gohel@example.com",
   resume: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/c05xlvku_Yash_Gohel_Resume.pdf",
-  blog1: "#blog1-coming-soon",
-  blog2: "#blog2-coming-soon", 
-  blog3: "#blog3-coming-soon",
+  blog1: "https://theonetechnologies.com/blog/post/best-practices-to-follow-for-creating-custom-web-solutions",
+  blog2: "https://theonetechnologies.com/blog/post/2024-vision-the-future-of-web-development", 
+  blog3: "https://theonetechnologies.com/blog/post/top-5-html-css-tools-to-boost-website-design-and-development-efficiency",
   projectRepo: "#github-repo-coming-soon"
 };
