@@ -417,26 +417,54 @@ body {
   opacity: 0.3;
 }
 
-/* HUD-style elements - Iron Man */
-.hud-element {
-  border: 2px solid var(--iron-red);
-  background: rgba(220, 20, 60, 0.05);
+/* Text Color Utilities */
+.text-text-secondary { color: var(--text-secondary); }
+.text-text-muted { color: var(--text-muted); }
+.text-brand-primary { color: var(--brand-primary); }
+
+/* Background Color Utilities */
+.bg-bg-secondary { background-color: var(--bg-secondary); }
+.bg-brand-primary { background-color: var(--brand-primary); }
+.bg-brand-hover { background-color: var(--brand-hover); }
+
+/* Border Utilities */
+.border-brand-primary { border-color: var(--brand-primary); }
+.border-border-subtle { border-color: var(--border-subtle); }
+.border-gold { border-color: var(--iron-gold); }
+
+/* JARVIS Interface - Golden Theme */
+.jarvis-interface {
+  border: 2px solid var(--iron-gold);
+  background: linear-gradient(135deg, 
+    rgba(255, 215, 0, 0.05) 0%, 
+    rgba(220, 20, 60, 0.03) 50%, 
+    rgba(0, 212, 255, 0.02) 100%);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
   position: relative;
-  padding: 20px;
-  border-radius: 8px;
 }
 
-.hud-element::before {
+.jarvis-interface::before {
   content: '';
   position: absolute;
   top: -2px;
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, var(--iron-red), transparent, var(--iron-gold));
+  background: linear-gradient(45deg, var(--iron-gold), transparent, var(--iron-red));
   z-index: -1;
-  opacity: 0.3;
-  border-radius: 8px;
+  opacity: 0.4;
+  border-radius: inherit;
+}
+
+.jarvis-text {
+  color: var(--iron-gold);
+  font-family: 'Inter', sans-serif;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  font-weight: 600;
+}
+
+.text-jarvis-green { 
+  color: var(--jarvis-green); 
 }
 
 /* Hologram effect - Iron Man style */
