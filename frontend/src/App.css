@@ -236,7 +236,7 @@ body {
   transform: translateY(0);
 }
 
-/* Arc Reactor Glow Effect */
+/* Arc Reactor Glow Effect - Iron Man Style */
 .arc-reactor {
   position: relative;
   display: inline-block;
@@ -245,32 +245,34 @@ body {
 .arc-reactor::before {
   content: '';
   position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
   background: radial-gradient(circle, var(--arc-blue-glow) 0%, transparent 70%);
   border-radius: 50%;
-  animation: pulse 2s infinite;
+  animation: arc-pulse 3s infinite;
   z-index: -1;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.1); }
+@keyframes arc-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
 }
 
-/* JARVIS Interface Elements */
-.jarvis-interface {
-  border: 1px solid var(--jarvis-green);
-  background: rgba(0, 255, 65, 0.05);
-  box-shadow: 0 0 10px var(--jarvis-glow);
+/* Iron Man Interface Elements */
+.iron-interface {
+  border: 2px solid var(--iron-red);
+  background: rgba(220, 20, 60, 0.05);
+  box-shadow: 0 0 15px rgba(220, 20, 60, 0.2);
+  border-radius: 8px;
 }
 
-.jarvis-text {
-  color: var(--jarvis-green);
-  font-family: 'Courier New', monospace;
-  text-shadow: 0 0 5px var(--jarvis-green);
+.iron-text {
+  color: var(--iron-gold);
+  font-family: 'Inter', sans-serif;
+  text-shadow: 0 0 3px var(--iron-gold);
+  font-weight: 600;
 }
 
 /* Layout System - Dark Theme Grid */
