@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border-subtle">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="body-small text-text-muted">
-              © 2024 Yash Gohel. Inspired by the genius of Tony Stark.
+              © 2025 Yash Gohel. Inspired by the genius of Tony Stark.
             </p>
             <p className="body-small text-text-muted mt-2 md:mt-0">
               JARVIS-powered portfolio • Built with React & Innovation
