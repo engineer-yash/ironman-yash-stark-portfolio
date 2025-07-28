@@ -54,7 +54,7 @@ const Certifications = () => {
                   <div className="flex-shrink-0">
                     <div className="arc-reactor">
                       <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
-                        <IconComponent className="w-8 h-8 text-black" />
+                        <IconComponent className="w-8 h-8 text-white" />
                       </div>
                     </div>
                   </div>
