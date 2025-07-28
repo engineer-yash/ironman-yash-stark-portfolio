@@ -16,7 +16,7 @@ const JarvisProvider = ({ children }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [transcript, setTranscript] = useState('');
   const [response, setResponse] = useState('');
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   // Speech Recognition (Mock implementation for now)
   const startListening = useCallback(() => {
