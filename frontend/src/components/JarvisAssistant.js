@@ -140,7 +140,7 @@ const JarvisAssistant = () => {
       {/* Expanded Chat Interface */}
       {isExpanded && (
         <div className="fixed bottom-24 right-6 z-50 w-96 max-w-[calc(100vw-3rem)]">
-          <div className="iron-interface bg-black bg-opacity-95 backdrop-blur-sm rounded-lg">
+          <div className="iron-interface bg-bg-primary bg-opacity-95 backdrop-blur-sm rounded-lg border-2 border-iron-gold">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-iron-gold">
               <div className="flex items-center space-x-3">
