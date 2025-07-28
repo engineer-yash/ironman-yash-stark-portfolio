@@ -43,7 +43,7 @@ const Experience = () => {
                 <div className="lg:col-span-2 flex items-center space-x-4">
                   <div className="arc-reactor">
                     <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
-                      <Briefcase className="w-8 h-8 text-black" />
+                      <Briefcase className="w-8 h-8 text-white" />
                     </div>
                   </div>
                 </div>
