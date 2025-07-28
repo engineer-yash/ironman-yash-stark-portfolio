@@ -102,7 +102,7 @@ const Education = () => {
               <div key={index} className="hud-element p-6 dark-hover">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <BookOpen className="w-6 h-6 text-black" />
+                    <BookOpen className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="heading-3 text-white mb-2">{course}</h3>
