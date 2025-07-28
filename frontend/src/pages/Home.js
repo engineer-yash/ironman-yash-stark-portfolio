@@ -111,18 +111,39 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right - 3D Spline Animation */}
+            {/* Right - Iron Man Suit Images */}
             <div className="relative">
               <div 
-                className="w-full h-96 lg:h-[600px] relative overflow-visible"
+                className="w-full h-96 lg:h-[600px] relative overflow-hidden rounded-lg"
                 style={{ 
-                  width: "100%", 
-                  height: "600px", 
-                  overflow: "visible", 
-                  position: "relative" 
+                  background: 'linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                  borderRadius: '12px'
                 }}
               >
-                <Spline scene="https://prod.spline.design/NbVmy6DPLhY-5Lvg/scene.splinecode" />
+                {/* Iron Man Suit Image Display */}
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                    <img
+                      src="https://images.unsplash.com/photo-1650299838565-bd570711dbe5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxyb2JvdCUyMGFybW9yfGVufDB8fHxyZWR8MTc1Mzc0NDg5M3ww&ixlib=rb-4.1.0&q=85"
+                      alt="Iron Man Suit Technology"
+                      className="w-full h-full object-cover rounded-lg filter brightness-110 contrast-105 hover:scale-105 transition-transform duration-500"
+                      style={{
+                        filter: 'sepia(20%) saturate(120%) hue-rotate(340deg) brightness(1.1)',
+                        boxShadow: '0 0 50px rgba(220, 20, 60, 0.3), inset 0 0 30px rgba(255, 215, 0, 0.1)'
+                      }}
+                    />
+                    
+                    {/* Arc Reactor Glow Effect */}
+                    <div className="absolute inset-0 rounded-lg pointer-events-none">
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-blue-400 rounded-full opacity-30 animate-pulse" 
+                           style={{
+                             background: 'radial-gradient(circle, rgba(0, 212, 255, 0.6) 0%, transparent 70%)',
+                             filter: 'blur(10px)'
+                           }}>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               {/* Overlay UI Elements */}
