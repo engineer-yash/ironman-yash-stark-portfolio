@@ -44,10 +44,10 @@ const Projects = () => {
             <button
               key={project.id}
               onClick={() => handleProjectSelect(index)}
-              className={`px-6 py-3 rounded transition-all duration-300 ${
+              className={`px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
                 selectedProject === index
-                  ? 'bg-brand-primary text-black'
-                  : 'bg-bg-secondary text-text-secondary hover:bg-brand-hover hover:text-white'
+                  ? 'bg-brand-primary text-black border-2 border-gold'
+                  : 'bg-bg-secondary text-text-secondary hover:bg-brand-hover hover:text-white border border-brand-primary hover:border-gold'
               }`}
             >
               {project.title}
