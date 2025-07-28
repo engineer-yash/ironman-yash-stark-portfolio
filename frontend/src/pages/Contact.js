@@ -36,14 +36,40 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setSubmitted(true);
-    setIsSubmitting(false);
-    
-    if (isActive) {
-      speak("Message received and processed. Mr. Stark will review your communication shortly. Thank you for reaching out to the workshop.");
+    try {
+      // Using FormSubmit.co service for form submission
+      const response = await fetch('https://formsubmit.co/gohelyash11@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `New message from ${formData.name} - ${formData.subject}`,
+          _captcha: 'false',
+          _template: 'table'
+        })
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        
+        if (isActive) {
+          speak("Message received and processed. Mr. Stark will review your communication shortly. Thank you for reaching out to the workshop.");
+        }
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again later or contact directly via email.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
