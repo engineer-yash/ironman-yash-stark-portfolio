@@ -223,40 +223,6 @@ const Certifications = () => {
             </div>
           </div>
         </div>
-
-        {/* Future Learning Goals */}
-        <div className="text-center">
-          <h2 className="heading-2 text-brand-primary mb-8">
-            Future <span className="text-white">Learning Path</span>
-          </h2>
-          <p className="body-large text-text-secondary max-w-3xl mx-auto mb-8">
-            Like Tony Stark's never-ending quest for technological advancement, 
-            I'm constantly exploring new technologies and methodologies to stay ahead of the curve.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {['Cloud Architecture', 'DevOps & CI/CD', 'Advanced AI/ML', 'Blockchain', 'IoT Systems'].map((skill, index) => (
-              <div
-                key={index}
-                className="px-6 py-3 bg-bg-secondary border border-brand-primary rounded-lg hover:bg-brand-hover transition-colors"
-              >
-                <span className="text-white">{skill}</span>
-                <span className="text-brand-primary ml-2">→ Learning</span>
-              </div>
-            ))}
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/skills" className="btn-primary dark-button-animate">
-              <span>Explore Current Skills</span>
-              <Star className="w-5 h-5" />
-            </a>
-            <a href="/contact" className="btn-secondary dark-button-animate">
-              <span>Collaborate & Learn</span>
-              <Award className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
