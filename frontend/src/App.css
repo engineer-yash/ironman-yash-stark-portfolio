@@ -307,31 +307,31 @@ body {
 .pad-xlarge { padding: 100px; }
 .pad-xxlarge { padding: 160px; }
 
-/* Animation System - Dark Theme */
-.dark-transition {
-  transition: all 0.4s ease-in-out;
+/* Animation System - Minimal Iron Man Theme */
+.iron-transition {
+  transition: all 0.3s ease;
 }
 
-.dark-hover:hover {
+.iron-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.2);
+}
+
+.iron-button-animate {
+  transition: all 0.3s ease;
+}
+
+.iron-button-animate:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(0, 255, 209, 0.2);
 }
 
-.dark-button-animate {
-  transition: all 0.4s ease-in-out;
-}
-
-.dark-button-animate:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(0, 255, 209, 0.3);
-}
-
-/* HUD-style elements */
+/* HUD-style elements - Iron Man */
 .hud-element {
-  border: 2px solid var(--brand-primary);
-  background: rgba(0, 255, 209, 0.05);
+  border: 2px solid var(--iron-red);
+  background: rgba(220, 20, 60, 0.05);
   position: relative;
   padding: 20px;
+  border-radius: 8px;
 }
 
 .hud-element::before {
@@ -341,22 +341,17 @@ body {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, var(--brand-primary), transparent, var(--brand-primary));
+  background: linear-gradient(45deg, var(--iron-red), transparent, var(--iron-gold));
   z-index: -1;
-  animation: scan 3s linear infinite;
+  opacity: 0.3;
+  border-radius: 8px;
 }
 
-@keyframes scan {
-  0% { opacity: 0.5; }
-  50% { opacity: 1; }
-  100% { opacity: 0.5; }
-}
-
-/* Hologram effect */
+/* Hologram effect - Iron Man style */
 .hologram {
   position: relative;
-  color: var(--brand-primary);
-  text-shadow: 0 0 10px var(--brand-primary);
+  color: var(--iron-red);
+  text-shadow: 0 0 10px var(--iron-red);
 }
 
 .hologram::before {
@@ -364,14 +359,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--arc-blue);
+  color: var(--iron-gold);
   z-index: -1;
-  animation: flicker 0.15s infinite linear alternate;
-}
-
-@keyframes flicker {
-  0% { opacity: 0.5; transform: translateX(0); }
-  100% { opacity: 0.8; transform: translateX(2px); }
+  opacity: 0.3;
 }
 
 /* Responsive Design */
