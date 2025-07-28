@@ -31,14 +31,14 @@ const Home = () => {
   return (
     <div className="dark-container min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center">
         <div className="dark-full-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
               {/* Intro */}
               <div className="space-y-4">
-                <div className="iron-text text-sm font-semibold tracking-wider">
+                <div className="iron-text text-sm font-semibold tracking-wider animate-pulse">
                   {'> STARK INDUSTRIES PROTOCOL INITIATED...'}
                 </div>
                 <h1 className="display-huge">
@@ -47,7 +47,7 @@ const Home = () => {
                 </h1>
                 <div className="display-medium iron-text">
                   Also Known As{' '}
-                  <span className="text-iron-gold">Tony Stark</span>
+                  <span className="text-iron-gold animate-pulse">Tony Stark</span>
                 </div>
                 <p className="heading-2 text-text-secondary">
                   {personalInfo.title}
@@ -63,14 +63,14 @@ const Home = () => {
 
               {/* Dynamic Achievement */}
               <div className="space-y-4">
-                <div className="iron-interface p-4 rounded">
+                <div className="iron-interface p-6 rounded-lg">
                   <div className="flex items-center space-x-3">
-                    <Zap className="w-5 h-5 text-iron-gold" />
+                    <Zap className="w-5 h-5 text-iron-gold animate-pulse" />
                     <span className="iron-text text-sm font-semibold">
                       CURRENT SYSTEM STATUS:
                     </span>
                   </div>
-                  <p className="text-white mt-2 text-lg">
+                  <p className="text-white mt-3 text-lg font-medium">
                     {achievements[currentAchievement]}
                   </p>
                 </div>
@@ -96,15 +96,15 @@ const Home = () => {
 
               {/* Stats Grid */}
               <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center space-y-2">
+                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">5+</div>
                   <div className="body-small text-text-muted">Projects Built</div>
                 </div>
-                <div className="text-center space-y-2">
+                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">95%</div>
                   <div className="body-small text-text-muted">Bug Resolution</div>
                 </div>
-                <div className="text-center space-y-2">
+                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">40%</div>
                   <div className="body-small text-text-muted">Performance Gain</div>
                 </div>
