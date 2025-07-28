@@ -145,7 +145,7 @@ const JarvisAssistant = () => {
             <div className="flex items-center justify-between p-4 border-b border-iron-gold">
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-iron-gold rounded-full flex items-center justify-center">
-                  <span className="text-black text-sm font-bold">J</span>
+                  <span className="text-bg-primary text-sm font-bold">J</span>
                 </div>
                 <div>
                   <div className="iron-text text-sm font-semibold">JARVIS</div>
