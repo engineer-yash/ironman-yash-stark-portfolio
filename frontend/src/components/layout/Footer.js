@@ -61,7 +61,7 @@ const Footer = () => {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-brand-hover hover:bg-brand-primary hover:text-black rounded-full transition-all duration-300 dark-hover"
+                className="p-3 bg-brand-hover hover:bg-brand-primary hover:text-white rounded-full transition-all duration-300 dark-hover"
                 title="LinkedIn Profile"
               >
                 <Linkedin className="w-5 h-5" />
