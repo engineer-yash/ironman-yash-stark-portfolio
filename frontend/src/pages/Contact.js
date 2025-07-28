@@ -90,7 +90,10 @@ const Contact = () => {
                 and processed by JARVIS. Mr. Stark will review your communication and respond shortly."
               </p>
               <button
-                onClick={() => setSubmitted(false)}
+                onClick={() => {
+                  setSubmitted(false);
+                  setFormData({ name: '', email: '', subject: '', message: '' });
+                }}
                 className="btn-primary dark-button-animate"
               >
                 <span>Send Another Message</span>
