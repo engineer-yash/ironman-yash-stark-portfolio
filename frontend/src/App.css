@@ -467,6 +467,46 @@ body {
   color: var(--jarvis-green); 
 }
 
+/* HUD-style elements - Iron Man */
+.hud-element {
+  border: 2px solid var(--iron-red);
+  background: rgba(220, 20, 60, 0.05);
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hud-element::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--iron-red), transparent, var(--iron-gold));
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 8px;
+}
+
+/* Animation System - Enhanced Iron Man Theme */
+.iron-transition {
+  transition: all 0.3s ease;
+}
+
+.iron-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.2);
+}
+
+.iron-button-animate {
+  transition: all 0.3s ease;
+}
+
+.iron-button-animate:hover {
+  transform: translateY(-2px);
+}
+
 /* Hologram effect - Iron Man style */
 .hologram {
   position: relative;
