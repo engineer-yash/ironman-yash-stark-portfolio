@@ -60,7 +60,7 @@ const Skills = () => {
                   : 'bg-bg-secondary text-white border-border-subtle hover:border-brand-primary hover:bg-brand-hover'
               }`}
             >
-              <category.icon className={`w-5 h-5 ${activeCategory === category.name ? 'text-black' : category.color}`} />
+              <category.icon className={`w-5 h-5 ${activeCategory === category.name ? 'text-white' : category.color}`} />
               <span>{category.name}</span>
             </button>
           ))}
