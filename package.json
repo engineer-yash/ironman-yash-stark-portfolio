@@ -1,0 +1,31 @@
+{
+  "name": "tony-stark-portfolio",
+  "version": "1.0.0",
+  "description": "Tony Stark inspired portfolio website built with React",
+  "main": "frontend/src/index.js",
+  "scripts": {
+    "dev": "cd frontend && yarn start",
+    "build": "cd frontend && yarn build",
+    "start": "cd frontend && yarn start",
+    "test": "cd frontend && yarn test",
+    "install-frontend": "cd frontend && yarn install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/tony-stark-portfolio.git"
+  },
+  "keywords": [
+    "react",
+    "portfolio",
+    "tony-stark",
+    "iron-man",
+    "marvel",
+    "web-development"
+  ],
+  "author": "Yash Gohel",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
