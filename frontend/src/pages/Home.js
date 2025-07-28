@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div className="dark-container min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center">
+      <section className="relative min-h-screen flex items-center pt-20">
         <div className="dark-full-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
