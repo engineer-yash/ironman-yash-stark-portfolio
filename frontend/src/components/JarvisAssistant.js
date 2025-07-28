@@ -19,22 +19,24 @@ const JarvisAssistant = () => {
     toggleJarvis
   } = useJarvis();
 
-  // Add initial greeting to chat
+  // Add initial greeting to chat when activated
   useEffect(() => {
-    if (chatHistory.length === 0 && isActive) {
+    if (isActive && chatHistory.length === 0) {
       setChatHistory([
         {
           type: 'jarvis',
-          message: 'Good evening, Mr. Stark. JARVIS at your service. How may I assist you today?',
+          message: 'Good evening, Mr. Stark. JARVIS systems online. How may I assist you today?',
           timestamp: new Date()
         }
       ]);
+    } else if (!isActive && chatHistory.length > 0) {
+      setChatHistory([]);
     }
-  }, [isActive, chatHistory.length]);
+  }, [isActive]);
 
   // Handle voice response
   useEffect(() => {
-    if (response) {
+    if (response && isActive) {
       setChatHistory(prev => [
         ...prev,
         {
@@ -44,11 +46,11 @@ const JarvisAssistant = () => {
         }
       ]);
     }
-  }, [response]);
+  }, [response, isActive]);
 
   // Handle voice transcript
   useEffect(() => {
-    if (transcript) {
+    if (transcript && isActive) {
       setChatHistory(prev => [
         ...prev,
         {
@@ -58,7 +60,7 @@ const JarvisAssistant = () => {
         }
       ]);
     }
-  }, [transcript]);
+  }, [transcript, isActive]);
 
   const handleChatSubmit = async (e) => {
     e.preventDefault();
@@ -111,10 +113,10 @@ const JarvisAssistant = () => {
       <div className="fixed bottom-6 right-6 z-50">
         <button
           onClick={toggleJarvis}
-          className="w-16 h-16 bg-gray-600 hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
+          className="w-16 h-16 bg-gray-600 hover:bg-gray-700 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg border-2 border-gray-500"
           title="Activate JARVIS"
         >
-          <MicOff className="w-6 h-6 text-white" />
+          <MessageCircle className="w-6 h-6 text-white" />
         </button>
       </div>
     );
@@ -127,10 +129,10 @@ const JarvisAssistant = () => {
         <div className={`transition-all duration-500 ${isExpanded ? 'mb-4' : ''}`}>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="w-16 h-16 bg-brand-primary hover:bg-brand-active rounded-full flex items-center justify-center transition-all duration-300 shadow-lg arc-reactor"
+            className="w-16 h-16 bg-gradient-to-r from-iron-red to-red-700 hover:from-red-700 hover:to-iron-red rounded-full flex items-center justify-center transition-all duration-300 shadow-lg border-2 border-iron-gold arc-reactor"
             title="JARVIS Assistant"
           >
-            <MessageCircle className="w-6 h-6 text-black" />
+            <MessageCircle className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>
@@ -138,15 +140,15 @@ const JarvisAssistant = () => {
       {/* Expanded Chat Interface */}
       {isExpanded && (
         <div className="fixed bottom-24 right-6 z-50 w-96 max-w-[calc(100vw-3rem)]">
-          <div className="jarvis-interface rounded-lg bg-black bg-opacity-90 backdrop-blur-sm">
+          <div className="iron-interface bg-black bg-opacity-95 backdrop-blur-sm rounded-lg">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-jarvis-green">
+            <div className="flex items-center justify-between p-4 border-b border-iron-gold">
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-jarvis-green rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-iron-gold rounded-full flex items-center justify-center">
                   <span className="text-black text-sm font-bold">J</span>
                 </div>
                 <div>
-                  <div className="jarvis-text text-sm font-semibold">JARVIS</div>
+                  <div className="iron-text text-sm font-semibold">JARVIS</div>
                   <div className="text-xs text-text-muted">Just A Rather Very Intelligent System</div>
                 </div>
               </div>
@@ -168,11 +170,11 @@ const JarvisAssistant = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-lg ${
                       chat.type === 'user'
-                        ? 'bg-brand-primary text-black'
-                        : 'bg-bg-secondary border border-jarvis-green'
+                        ? 'bg-iron-red text-white'
+                        : 'bg-bg-secondary border border-iron-gold'
                     }`}
                   >
-                    <p className={`text-sm ${chat.type === 'jarvis' ? 'jarvis-text' : ''}`}>
+                    <p className={`text-sm ${chat.type === 'jarvis' ? 'iron-text' : ''}`}>
                       {chat.message}
                     </p>
                     <div className="text-xs text-opacity-70 mt-1">
@@ -184,21 +186,21 @@ const JarvisAssistant = () => {
             </div>
 
             {/* Voice Controls */}
-            <div className="flex items-center justify-center space-x-4 p-4 border-b border-jarvis-green">
+            <div className="flex items-center justify-center space-x-4 p-4 border-b border-iron-gold">
               <button
                 onClick={isListening ? stopListening : startListening}
                 disabled={!isActive}
                 className={`p-2 rounded-full transition-all duration-300 ${
                   isListening
-                    ? 'bg-red-500 animate-pulse'
-                    : 'bg-brand-primary hover:bg-brand-active'
+                    ? 'bg-red-600 animate-pulse'
+                    : 'bg-iron-red hover:bg-red-700'
                 }`}
                 title={isListening ? 'Stop Listening' : 'Start Voice Input'}
               >
                 {isListening ? (
                   <Mic className="w-4 h-4 text-white" />
                 ) : (
-                  <MicOff className="w-4 h-4 text-black" />
+                  <MicOff className="w-4 h-4 text-white" />
                 )}
               </button>
 
@@ -207,19 +209,19 @@ const JarvisAssistant = () => {
                 disabled={isSpeaking}
                 className={`p-2 rounded-full transition-all duration-300 ${
                   isSpeaking
-                    ? 'bg-blue-500 animate-pulse'
-                    : 'bg-brand-primary hover:bg-brand-active'
+                    ? 'bg-blue-600 animate-pulse'
+                    : 'bg-iron-red hover:bg-red-700'
                 }`}
                 title="Test Voice Output"
               >
                 {isSpeaking ? (
                   <Volume2 className="w-4 h-4 text-white" />
                 ) : (
-                  <VolumeX className="w-4 h-4 text-black" />
+                  <VolumeX className="w-4 h-4 text-white" />
                 )}
               </button>
 
-              <div className="text-xs jarvis-text">
+              <div className="text-xs iron-text">
                 {isListening ? 'Listening...' : isSpeaking ? 'Speaking...' : 'Ready'}
               </div>
             </div>
@@ -232,7 +234,7 @@ const JarvisAssistant = () => {
                   value={chatInput}
                   onChange={(e) => setChatInput(e.target.value)}
                   placeholder="Ask JARVIS anything..."
-                  className="flex-1 bg-bg-secondary border border-jarvis-green rounded px-3 py-2 text-white placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-jarvis-green"
+                  className="flex-1 bg-bg-secondary border border-iron-gold rounded px-3 py-2 text-white placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-iron-gold"
                   disabled={!isActive}
                 />
                 <button
