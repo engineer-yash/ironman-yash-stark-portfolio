@@ -58,28 +58,6 @@ export const experience = [
 export const projects = [
   {
     id: 1,
-    title: "SimpleTix Platform",
-    type: "Professional Project",
-    duration: "Jan 2024 – Oct 2024",
-    status: "Production",
-    description: "A comprehensive ticketing platform for event management, registration, and real-time attendance tracking.",
-    technologies: ["ASP.NET Core", "React JS", "SQL Server", "RESTful APIs", "GitLab CI/CD"],
-    features: [
-      "Real-time event attendance tracking",
-      "Secure payment gateway integration", 
-      "Mobile-responsive ticket management",
-      "Advanced analytics dashboard",
-      "QR code-based entry system"
-    ],
-    achievements: [
-      "Improved backend response time by 10%",
-      "Reduced UI glitches by 15%",
-      "Achieved 95%+ bug resolution rate"
-    ],
-    starkTech: "Mark 50 Nanoparticle Suit - Adaptive, responsive, and lightning fast"
-  },
-  {
-    id: 2,
     title: "SpectrOm'23 – Mega National Event Web Portal", 
     type: "College Project",
     duration: "Dec 2022 – Feb 2023",
@@ -102,7 +80,7 @@ export const projects = [
     starkTech: "Arc Reactor Interface - Clean energy powering seamless user experiences"
   },
   {
-    id: 3,
+    id: 2,
     title: "Dairy Farm Management System",
     type: "Hackathon Project",
     duration: "Apr 2022 – Aug 2022", 
