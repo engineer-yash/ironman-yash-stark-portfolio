@@ -160,7 +160,7 @@ const Experience = () => {
 
             <div className="hud-element p-6 text-center">
               <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-black text-xl font-bold">10%</span>
+                <span className="text-white text-xl font-bold">10%</span>
               </div>
               <h3 className="heading-3 text-brand-primary mb-2">Performance Improvement</h3>
               <p className="body-small text-text-secondary">
