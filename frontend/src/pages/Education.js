@@ -154,7 +154,7 @@ const Education = () => {
             <div className="text-center hud-element p-8">
               <div className="arc-reactor mb-4">
                 <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center mx-auto">
-                  <Lightbulb className="w-8 h-8 text-black" />
+                  <Lightbulb className="w-8 h-8 text-white" />
                 </div>
               </div>
               <div className="space-y-2">
