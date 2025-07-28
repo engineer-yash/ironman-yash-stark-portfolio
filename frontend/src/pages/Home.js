@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Zap } from 'lucide-react';
-import Spline from '@splinetool/react-spline';
 import { personalInfo, achievements, socialLinks } from '../mockData';
 import { useJarvis } from '../context/JarvisContext';
 import JarvisAssistant from '../components/JarvisAssistant';
