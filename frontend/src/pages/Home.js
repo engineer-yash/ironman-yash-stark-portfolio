@@ -170,9 +170,9 @@ const Home = () => {
       </section>
 
       {/* Quick Overview Section */}
-      <section className="py-20 bg-bg-secondary">
+      <section className="py-32 bg-bg-secondary mt-20">
         <div className="dark-content-container">
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h2 className="display-large mb-6">
               The <span className="iron-text">Stark</span> Workshop
             </h2>
