@@ -208,5 +208,9 @@ export const socialLinks = {
   github: "https://github.com/yashgohel",
   linkedin: "https://linkedin.com/in/yashgohel",
   email: "yash.gohel@example.com",
-  resume: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/c05xlvku_Yash_Gohel_Resume.pdf"
+  resume: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/c05xlvku_Yash_Gohel_Resume.pdf",
+  blog1: "#blog1-coming-soon",
+  blog2: "#blog2-coming-soon", 
+  blog3: "#blog3-coming-soon",
+  projectRepo: "#github-repo-coming-soon"
 };
