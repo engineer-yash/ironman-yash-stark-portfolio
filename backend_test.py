@@ -15,7 +15,7 @@ from datetime import datetime
 import uuid
 
 # Get backend URL from environment
-BACKEND_URL = "https://fe8d2f44-c026-4f79-8638-c569145e0949.preview.emergentagent.com"
+BACKEND_URL = "https://f38bea95-5648-400a-8734-5c2aa427c8b2.preview.emergentagent.com"
 API_BASE = f"{BACKEND_URL}/api"
 
 def test_server_accessibility():
