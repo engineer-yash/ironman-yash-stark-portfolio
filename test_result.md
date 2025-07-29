@@ -222,11 +222,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Update Social Links"
-    - "Remove Project Action Buttons"
-    - "Fix Education Page CGPA Color"
-    - "Add Scroll-to-Top Navigation"
-    - "Fix Vercel Deployment Configuration"
+    - "Add Instagram Social Link"
+    - "Update Tab Title and SEO Meta Tags"
+    - "Implement Iron Man Logo as Favicon and Footer Logo"
+    - "Update README for ironman-yash-stark.vercel.app Deployment"
+    - "Optimize Deployment Configuration"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
