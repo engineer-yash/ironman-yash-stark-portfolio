@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Instagram } from 'lucide-react';
 import { socialLinks } from '../../mockData';
 
 const Footer = () => {
