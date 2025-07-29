@@ -222,11 +222,11 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Fix Navbar Spacing Issues"
-    - "Site-wide Padding Fixes"
-    - "iPhone SE Mobile Responsiveness"
-    - "Stark Workshop Section Optimization"
-    - "Deployment Configuration"
+    - "Update Social Links"
+    - "Remove Project Action Buttons"
+    - "Fix Education Page CGPA Color"
+    - "Add Scroll-to-Top Navigation"
+    - "Fix Vercel Deployment Configuration"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
