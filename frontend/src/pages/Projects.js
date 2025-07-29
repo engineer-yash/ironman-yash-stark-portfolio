@@ -192,20 +192,16 @@ const Projects = () => {
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-2 py-1 bg-brand-hover text-brand-primary text-xs rounded"
+                      className="px-2 py-1 bg-brand-hover text-text-secondary text-xs rounded"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-brand-hover text-brand-primary text-xs rounded">
+                    <span className="px-2 py-1 bg-brand-hover text-text-secondary text-xs rounded">
                       +{project.technologies.length - 3} more
                     </span>
                   )}
-                </div>
-
-                <div className="flex items-center text-brand-primary text-sm">
-                  <span>View Project Details</span>
                 </div>
               </div>
             ))}
