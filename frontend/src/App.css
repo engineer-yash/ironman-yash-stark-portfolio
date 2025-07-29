@@ -631,23 +631,26 @@ body {
   }
   
   .dark-container {
-    padding: 60px 16px 0;
+    padding: 60px 0 0; /* Remove side padding, keep top only */
   }
   
   .dark-full-container {
-    padding: 0 16px;
+    padding: 0; /* Full width */
   }
   
   .hud-element {
     padding: 16px;
+    margin: 0 16px; /* Add margin instead of container padding */
   }
   
   .jarvis-interface {
     padding: 16px;
+    margin: 0 16px; /* Add margin instead of container padding */
   }
   
   .iron-interface {
     padding: 16px;
+    margin: 0 16px; /* Add margin instead of container padding */
   }
   
   /* Mobile-specific button adjustments */
