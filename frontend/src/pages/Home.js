@@ -53,14 +53,14 @@ const Home = () => {
       
       <div className="relative z-10">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center pt-16 sm:pt-20">
         <div className="dark-full-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               {/* Intro */}
               <div className="space-y-4">
-                <div className="iron-text text-sm font-semibold tracking-wider animate-pulse">
+                <div className="iron-text text-xs sm:text-sm font-semibold tracking-wider animate-pulse">
                   {'> STARK INDUSTRIES PROTOCOL INITIATED...'}
                 </div>
                 <h1 className="display-huge">
@@ -85,14 +85,14 @@ const Home = () => {
 
               {/* Dynamic Achievement */}
               <div className="space-y-4">
-                <div className="iron-interface p-6 rounded-lg">
+                <div className="iron-interface p-4 lg:p-6 rounded-lg">
                   <div className="flex items-center space-x-3">
-                    <Zap className="w-5 h-5 text-iron-gold animate-pulse" />
-                    <span className="iron-text text-sm font-semibold">
+                    <Zap className="w-4 h-4 lg:w-5 lg:h-5 text-iron-gold animate-pulse" />
+                    <span className="iron-text text-xs sm:text-sm font-semibold">
                       CURRENT SYSTEM STATUS:
                     </span>
                   </div>
-                  <p className="text-white mt-3 text-lg font-medium">
+                  <p className="text-white mt-3 text-base lg:text-lg font-medium">
                     {achievements[currentAchievement]}
                   </p>
                 </div>
@@ -102,7 +102,7 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/projects" className="btn-primary iron-button-animate">
                   <span>Explore Projects</span>
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
                 </Link>
                 <a
                   href={socialLinks.resume}
@@ -111,22 +111,22 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="btn-secondary iron-button-animate"
                 >
-                  <Download className="w-5 h-5" />
+                  <Download className="w-4 h-4 lg:w-5 lg:h-5" />
                   <span>Download Resume</span>
                 </a>
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
+              <div className="grid grid-cols-3 gap-4 lg:gap-6 pt-6 lg:pt-8">
+                <div className="text-center space-y-2 p-3 lg:p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">5+</div>
                   <div className="body-small text-text-muted">Projects Built</div>
                 </div>
-                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
+                <div className="text-center space-y-2 p-3 lg:p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">95%</div>
                   <div className="body-small text-text-muted">Bug Resolution</div>
                 </div>
-                <div className="text-center space-y-2 p-4 bg-brand-hover rounded-lg border border-iron-red">
+                <div className="text-center space-y-2 p-3 lg:p-4 bg-brand-hover rounded-lg border border-iron-red">
                   <div className="display-medium iron-text">40%</div>
                   <div className="body-small text-text-muted">Performance Gain</div>
                 </div>
@@ -134,9 +134,9 @@ const Home = () => {
             </div>
 
             {/* Right - Iron Man Suit Images */}
-            <div className="relative">
+            <div className="relative mt-8 lg:mt-0">
               <div 
-                className="w-full h-96 lg:h-[600px] relative overflow-hidden rounded-lg"
+                className="w-full h-80 sm:h-96 lg:h-[600px] relative overflow-hidden rounded-lg"
                 style={{ 
                   background: 'linear-gradient(135deg, rgba(220, 20, 60, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%)',
                   borderRadius: '12px'
@@ -144,7 +144,7 @@ const Home = () => {
               >
                 {/* Iron Man Suit Image Display */}
                 <div className="relative w-full h-full flex items-center justify-center">
-                  <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                  <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96">
                     <img
                       src="https://customer-assets.emergentagent.com/job_dd71168c-a0c9-4d0c-9ff0-288fcc6c3b45/artifacts/7t42ou3s_ai-generated-8229398_1280.png"
                       alt="Iron Man Suit Technology"
@@ -157,7 +157,7 @@ const Home = () => {
                     
                     {/* Arc Reactor Glow Effect */}
                     <div className="absolute inset-0 rounded-lg pointer-events-none">
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-blue-400 rounded-full opacity-30 animate-pulse" 
+                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 lg:w-20 lg:h-20 bg-blue-400 rounded-full opacity-30 animate-pulse" 
                            style={{
                              background: 'radial-gradient(circle, rgba(0, 212, 255, 0.6) 0%, transparent 70%)',
                              filter: 'blur(10px)'
@@ -169,20 +169,20 @@ const Home = () => {
               </div>
               
               {/* Overlay UI Elements */}
-              <div className="absolute top-4 right-4 iron-interface p-3 rounded">
+              <div className="absolute top-2 sm:top-4 right-2 sm:right-4 iron-interface p-2 sm:p-3 rounded">
                 <div className="iron-text text-xs">
                   ARC REACTOR STATUS: ONLINE
                 </div>
-                <div className="text-iron-gold text-sm font-semibold">
+                <div className="text-iron-gold text-xs sm:text-sm font-semibold">
                   100% POWER
                 </div>
               </div>
               
-              <div className="absolute bottom-4 left-4 iron-interface p-3 rounded">
+              <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 iron-interface p-2 sm:p-3 rounded">
                 <div className="iron-text text-xs">
                   WORKSHOP MODE: ACTIVE
                 </div>
-                <div className="text-iron-gold text-sm font-semibold">
+                <div className="text-iron-gold text-xs sm:text-sm font-semibold">
                   ALL SYSTEMS OPERATIONAL
                 </div>
               </div>
