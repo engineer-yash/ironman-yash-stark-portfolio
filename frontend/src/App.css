@@ -87,7 +87,7 @@ body {
 }
 
 .dark-main {
-  padding-top: 60px; /* Reduced from 72px to match smaller navbar */
+  padding-top: 70px; /* Reduced from various values, consistent across all screens */
   min-height: calc(100vh - 120px);
   position: relative;
   z-index: 1;
