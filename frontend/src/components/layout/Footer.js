@@ -67,6 +67,15 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-brand-hover hover:bg-brand-primary hover:text-white rounded-full transition-all duration-300 dark-hover"
+                title="Instagram Profile"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
                 href={`mailto:${socialLinks.email}`}
                 className="p-3 bg-brand-hover hover:bg-brand-primary hover:text-white rounded-full transition-all duration-300 dark-hover"
                 title="Send Email"
