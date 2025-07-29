@@ -246,6 +246,7 @@ const Home = () => {
 
       {/* JARVIS Assistant */}
       <JarvisAssistant />
+      </div>
     </div>
   );
 };
