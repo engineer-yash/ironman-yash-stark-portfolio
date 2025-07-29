@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "analyze this repository and Remove extra space between navbar below white line and content, still it's not responsive in mobile, navbar have some empty space on left side, and whole site have space from left and right side footer as well, so make it responsive use Iphone SE model px, reduce little empty space from bottom in The Stark Workshop section and make it deployable"
+user_problem_statement: "analyze this repository and Change the social links: github - https://github.com/engineer-yash , LinkedIn - https://www.linkedin.com/in/yash-gohel , mailto - gohelyash11@gmail.com. Remove Live Demo, View Source, Explore Project buttons in the Project page. Change color to white of 8.96/10 in Education Page. After navigating to new page, return to a starting view so that user can see details from starting. Vercel gave me this error in preview after deployment: 404: NOT_FOUND Code: NOT_FOUND ID: bom1::tk5mb-1753777919628-f7134518d4f5, fix all changes and make it fully deployable by reading Vercel website's official criterias"
 
 backend:
   - task: "Backend Server Accessibility"
