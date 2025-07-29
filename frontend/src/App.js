@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from './components/ui/toaster';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -19,6 +20,7 @@ function App() {
     <JarvisProvider>
       <Router>
         <div className="App dark-container">
+          <ScrollToTop />
           <Navbar />
           <main className="dark-main">
             <Routes>
