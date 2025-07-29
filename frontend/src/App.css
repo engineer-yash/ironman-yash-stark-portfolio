@@ -528,7 +528,7 @@ body {
 /* iPhone SE and smaller devices */
 @media (max-width: 375px) {
   .dark-main {
-    padding-top: 45px; /* Minimal gap for iPhone SE */
+    padding-top: 58px; /* Just enough to clear navbar */
   }
   
   .dark-container {
@@ -563,7 +563,7 @@ body {
 
 @media (max-width: 640px) {
   .dark-main {
-    padding-top: 50px; /* Minimal gap for mobile */
+    padding-top: 58px; /* Just enough to clear navbar */
   }
   
   .dark-container {
