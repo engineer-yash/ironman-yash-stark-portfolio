@@ -89,7 +89,7 @@ const Skills = () => {
         </div>
 
         {/* Skills Display */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Skills List */}
           <div className="space-y-6">
             <h2 className="heading-2 text-brand-primary mb-8">
