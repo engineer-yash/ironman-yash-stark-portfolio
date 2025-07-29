@@ -22,7 +22,7 @@ const Navbar = () => {
   const isActivePath = (path) => location.pathname === path;
 
   return (
-    <header className="bg-bg-primary border-b-2 border-iron-red fixed top-0 w-full z-10 py-4 px-6 backdrop-blur-sm bg-opacity-95">
+    <header className="bg-bg-primary border-b-2 border-iron-red fixed top-0 w-full z-10 py-2 px-4 backdrop-blur-sm bg-opacity-95">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-4 iron-transition iron-hover">
