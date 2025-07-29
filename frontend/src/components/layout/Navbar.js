@@ -25,17 +25,17 @@ const Navbar = () => {
     <header className="bg-bg-primary border-b-2 border-iron-red fixed top-0 w-full z-10 py-2 px-4 backdrop-blur-sm bg-opacity-95">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-4 iron-transition iron-hover">
+        <Link to="/" className="flex items-center space-x-3 iron-transition iron-hover">
           <div className="arc-reactor">
             <img 
               src="https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/jg7d8t3b_passportSize.jpg"
               alt="Yash Gohel"
-              className="w-12 h-12 rounded-full object-cover border-2 border-iron-gold hover:border-iron-red transition-all duration-300 hover:shadow-lg hover:shadow-iron-gold"
+              className="w-10 h-10 rounded-full object-cover border-2 border-iron-gold hover:border-iron-red transition-all duration-300 hover:shadow-lg hover:shadow-iron-gold"
             />
           </div>
           <div className="hidden md:block">
-            <div className="text-lg font-bold text-white hover:text-iron-gold transition-colors">Yash Gohel</div>
-            <div className="text-sm iron-text">Tony Stark</div>
+            <div className="text-base font-bold text-white hover:text-iron-gold transition-colors">Yash Gohel</div>
+            <div className="text-xs iron-text">Tony Stark</div>
           </div>
         </Link>
 
