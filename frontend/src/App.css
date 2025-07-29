@@ -634,6 +634,10 @@ body {
     padding: 60px 16px 0;
   }
   
+  .dark-full-container {
+    padding: 0 16px;
+  }
+  
   .hud-element {
     padding: 16px;
   }
