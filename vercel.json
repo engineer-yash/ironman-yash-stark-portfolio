@@ -25,10 +25,6 @@
       "dest": "frontend/build/manifest.json"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "https://your-backend-url.com/api/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "frontend/build/index.html"
     }
@@ -40,10 +36,5 @@
   "public": true,
   "github": {
     "enabled": true
-  },
-  "functions": {
-    "frontend/build/**": {
-      "includeFiles": "frontend/build/**"
-    }
   }
 }
