@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "tony-stark-portfolio",
+  "name": "ironman-yash-stark",
   "buildCommand": "cd frontend && yarn build",
   "outputDirectory": "frontend/build",
   "installCommand": "cd frontend && yarn install --frozen-lockfile",
