@@ -94,9 +94,9 @@ const Navbar = () => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-3 text-white hover:text-iron-gold transition-colors rounded-md hover:bg-brand-hover border border-transparent hover:border-iron-gold"
+            className="lg:hidden p-2 text-white hover:text-iron-gold transition-colors rounded-md hover:bg-brand-hover border border-transparent hover:border-iron-gold"
           >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
