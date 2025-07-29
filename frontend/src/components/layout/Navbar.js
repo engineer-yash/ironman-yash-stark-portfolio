@@ -103,16 +103,16 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden mt-4 pb-4 border-t-2 border-iron-red bg-bg-primary bg-opacity-95 backdrop-blur-sm rounded-b-lg">
-          <nav className="flex flex-col space-y-2 mt-4">
+        <div className="lg:hidden mt-2 pb-2 border-t border-iron-red bg-bg-primary bg-opacity-95 backdrop-blur-sm rounded-b-lg">
+          <nav className="flex flex-col space-y-1 mt-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`mx-4 px-6 py-4 rounded-lg transition-all duration-500 font-medium relative overflow-hidden group ${
+                className={`mx-2 px-4 py-3 text-sm rounded-lg transition-all duration-500 font-medium relative overflow-hidden group ${
                   isActivePath(item.path)
-                    ? 'bg-gradient-to-br from-iron-red via-red-600 to-red-800 text-white border-2 border-iron-gold shadow-xl shadow-iron-red/40'
-                    : 'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-iron-red/20 hover:via-iron-gold/10 hover:to-iron-red/20 border-2 border-transparent hover:border-iron-gold/50'
+                    ? 'bg-gradient-to-br from-iron-red via-red-600 to-red-800 text-white border border-iron-gold shadow-lg shadow-iron-red/40'
+                    : 'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-iron-red/20 hover:via-iron-gold/10 hover:to-iron-red/20 border border-transparent hover:border-iron-gold/50'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
