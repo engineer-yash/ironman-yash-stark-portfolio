@@ -11,9 +11,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="arc-reactor">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">YG</span>
-                </div>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_not-found-fix/artifacts/hjhl5d5g_ai-generated-7920006_1920-removebg-preview.png"
+                  alt="Iron Man Logo"
+                  className="w-8 h-8 object-contain"
+                />
               </div>
               <div>
                 <div className="text-lg font-semibold text-white">Yash Gohel</div>
