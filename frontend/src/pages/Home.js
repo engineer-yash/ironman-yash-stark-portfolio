@@ -192,10 +192,10 @@ const Home = () => {
       </section>
 
       {/* Quick Overview Section */}
-      <section className="py-16 lg:py-20 bg-bg-secondary mt-12 lg:mt-16">
+      <section className="py-12 lg:py-16 bg-bg-secondary mt-8 lg:mt-12">
         <div className="dark-content-container">
-          <div className="text-center mb-8 lg:mb-12">
-            <h2 className="display-large mb-4 lg:mb-6">
+          <div className="text-center mb-8 lg:mb-10">
+            <h2 className="display-large mb-4 lg:mb-5">
               The <span className="iron-text">Stark</span> Workshop
             </h2>
             <p className="body-large text-text-secondary max-w-3xl mx-auto">
@@ -204,7 +204,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="dark-grid">
+          <div className="dark-grid pb-8 lg:pb-12">
             <Link to="/experience" className="hud-element iron-hover group">
               <h3 className="heading-2 iron-text mb-4">Experience Lab</h3>
               <p className="body-medium text-text-secondary">
