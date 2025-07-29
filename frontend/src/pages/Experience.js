@@ -112,7 +112,7 @@ const Experience = () => {
                     </div>
 
                     {/* Key Achievements */}
-                    <div className="space-y-6 mb-8">
+                    <div className="space-y-6 mt-3 mb-8">
                       <h4 className="heading-3 text-brand-primary">Key Achievements</h4>
                       <div className="space-y-4">
                         {exp.achievements.map((achievement, achIndex) => (
