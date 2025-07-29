@@ -154,65 +154,65 @@ backend:
           comment: "Proper error handling implemented. FastAPI validation working correctly for missing required fields (422 status code)."
 
 frontend:
-  - task: "Fix Navbar Spacing Issues"
+  - task: "Update Social Links"
     implemented: true
     working: true
-    file: "frontend/src/components/layout/Navbar.js, frontend/src/App.css"
+    file: "frontend/src/mockData.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
         - working: true
           agent: "main"
-          comment: "Removed extra space between navbar and content, fixed left-side empty space by removing max-width constraint, improved mobile navbar responsiveness"
+          comment: "Updated social links to use new GitHub (https://github.com/engineer-yash), LinkedIn (https://www.linkedin.com/in/yash-gohel), and email (gohelyash11@gmail.com) URLs"
 
-  - task: "Site-wide Padding Fixes"
+  - task: "Remove Project Action Buttons"
     implemented: true
     working: true
-    file: "frontend/src/App.css, frontend/src/components/layout/Footer.js"
+    file: "frontend/src/pages/Projects.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: true
     status_history:
         - working: true
           agent: "main"
-          comment: "Removed left/right side padding from all containers including footer, updated layout to use full screen width"
+          comment: "Removed Live Demo, View Source, and Explore Project buttons from the Projects page as requested"
 
-  - task: "iPhone SE Mobile Responsiveness"
+  - task: "Fix Education Page CGPA Color"
     implemented: true
     working: true
-    file: "frontend/src/App.css"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: true
-    status_history:
-        - working: true
-          agent: "main"
-          comment: "Added specific iPhone SE breakpoints (375px), fixed layout issues at mobile viewport, improved text scaling and button sizing"
-
-  - task: "Stark Workshop Section Optimization"
-    implemented: true
-    working: true
-    file: "frontend/src/pages/Home.js"
+    file: "frontend/src/pages/Education.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: true
     status_history:
         - working: true
           agent: "main"
-          comment: "Reduced bottom spacing/padding in the Stark Workshop section, improved section spacing and layout"
+          comment: "Changed 8.96/10 CGPA text color from red to white in Education page"
 
-  - task: "Deployment Configuration"
+  - task: "Add Scroll-to-Top Navigation"
     implemented: true
     working: true
-    file: "vercel.json"
+    file: "frontend/src/App.js, frontend/src/components/ScrollToTop.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: true
     status_history:
         - working: true
           agent: "main"
-          comment: "Updated Vercel configuration for proper deployment, tested build process successfully"
+          comment: "Added ScrollToTop component to ensure pages scroll to top when navigating between routes"
+
+  - task: "Fix Vercel Deployment Configuration"
+    implemented: true
+    working: true
+    file: "vercel.json, frontend/package.json"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Updated Vercel configuration and build settings: fixed homepage setting to '/' for absolute paths, updated vercel.json with proper build configuration, ensured build process works correctly"
 
 metadata:
   created_by: "main_agent"
