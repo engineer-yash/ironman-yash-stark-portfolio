@@ -53,8 +53,8 @@ A stunning Iron Man-inspired portfolio website showcasing the genius behind Yash
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/tony-stark-portfolio.git
-cd tony-stark-portfolio
+git clone https://github.com/engineer-yash/ironman-yash-stark.git
+cd ironman-yash-stark
 
 # Install frontend dependencies
 cd frontend
