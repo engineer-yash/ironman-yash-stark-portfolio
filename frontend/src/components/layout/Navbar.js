@@ -72,10 +72,10 @@ const Navbar = () => {
           {/* JARVIS Toggle */}
           <button
             onClick={toggleJarvis}
-            className={`px-8 py-3 rounded-lg font-bold transition-all duration-500 relative overflow-hidden group transform hover:scale-105 ${
+            className={`px-4 py-2 text-xs rounded-lg font-bold transition-all duration-500 relative overflow-hidden group transform hover:scale-105 ${
               isActive 
-                ? 'bg-gradient-to-br from-iron-gold via-yellow-400 to-iron-gold text-bg-primary hover:from-yellow-300 hover:via-iron-gold hover:to-yellow-500 shadow-2xl border-2 border-iron-red shadow-iron-gold/50' 
-                : 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 text-gray-300 hover:from-gray-700 hover:via-gray-600 hover:to-gray-700 border-2 border-gray-600 hover:border-iron-gold/50 shadow-xl'
+                ? 'bg-gradient-to-br from-iron-gold via-yellow-400 to-iron-gold text-bg-primary hover:from-yellow-300 hover:via-iron-gold hover:to-yellow-500 shadow-lg border border-iron-red shadow-iron-gold/50' 
+                : 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 text-gray-300 hover:from-gray-700 hover:via-gray-600 hover:to-gray-700 border border-gray-600 hover:border-iron-gold/50 shadow-md'
             }`}
           >
             {/* Enhanced shimmer effect */}
@@ -87,7 +87,7 @@ const Navbar = () => {
             {/* Glow effect */}
             <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-gradient-to-br from-iron-red/20 via-transparent to-iron-gold/20" />
             <span className="relative z-10 tracking-wider">
-              JARVIS {isActive ? 'ONLINE' : 'OFFLINE'}
+              JARVIS {isActive ? 'ON' : 'OFF'}
             </span>
           </button>
 
