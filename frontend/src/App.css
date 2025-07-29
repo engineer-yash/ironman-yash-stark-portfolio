@@ -528,19 +528,19 @@ body {
 /* iPhone SE and smaller devices */
 @media (max-width: 375px) {
   .dark-main {
-    padding-top: 70px;
+    padding-top: 55px; /* Further reduced for mobile */
   }
   
   .dark-container {
-    padding: 0 12px;
+    padding: 0; /* Remove all side padding */
   }
   
   .dark-content-container {
-    padding: 0 12px;
+    padding: 0 12px; /* Minimal padding only for content */
   }
   
   .dark-full-container {
-    padding: 0 12px;
+    padding: 0; /* Full width */
   }
   
   .display-huge { font-size: 28px; }
@@ -563,19 +563,19 @@ body {
 
 @media (max-width: 640px) {
   .dark-main {
-    padding-top: 70px;
+    padding-top: 60px; /* Reduced from 70px */
   }
   
   .dark-container {
-    padding: 0 16px;
+    padding: 0; /* Remove all side padding */
   }
   
   .dark-content-container {
-    padding: 0 16px;
+    padding: 0 16px; /* Only content needs minimal padding */
   }
   
   .dark-full-container {
-    padding: 0 16px;
+    padding: 0; /* Full width */
   }
   
   .display-huge { font-size: 32px; }
