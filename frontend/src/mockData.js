@@ -188,6 +188,7 @@ export const achievements = [
 export const socialLinks = {
   github: "https://github.com/engineer-yash",
   linkedin: "https://www.linkedin.com/in/yash-gohel",
+  instagram: "https://www.instagram.com/yashu_gohel_",
   email: "gohelyash11@gmail.com",
   resume: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/c05xlvku_Yash_Gohel_Resume.pdf",
   blog1: "https://theonetechnologies.com/blog/post/best-practices-to-follow-for-creating-custom-web-solutions",
