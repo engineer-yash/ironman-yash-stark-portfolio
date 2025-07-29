@@ -126,7 +126,7 @@ GENERATE_SOURCEMAP=false
    ```
 
 ### Quick Deploy Button
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/tony-stark-portfolio&project-name=tony-stark-portfolio&repository-name=tony-stark-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/engineer-yash/ironman-yash-stark&project-name=ironman-yash-stark&repository-name=ironman-yash-stark)
 
 ### Manual Build
 
