@@ -95,7 +95,7 @@ const Education = () => {
               <div className="text-center">
                 <div className="jarvis-interface p-8 rounded">
                   <div className="space-y-4">
-                    <div className="text-6xl font-bold text-white">
+                    <div className="text-4xl font-bold text-white">
                       {education.cgpa}
                     </div>
                     <div className="text-sm text-text-muted">CGPA</div>
