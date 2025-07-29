@@ -45,10 +45,10 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`px-6 py-3 rounded-lg transition-all duration-500 font-medium relative overflow-hidden group ${
+              className={`px-4 py-2 text-sm rounded-lg transition-all duration-500 font-medium relative overflow-hidden group ${
                 isActivePath(item.path) 
-                  ? 'bg-gradient-to-br from-iron-red via-red-600 to-red-800 text-white shadow-2xl border-2 border-iron-gold shadow-iron-red/50' 
-                  : 'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-iron-red/20 hover:via-iron-gold/10 hover:to-iron-red/20 border-2 border-transparent hover:border-iron-gold/50'
+                  ? 'bg-gradient-to-br from-iron-red via-red-600 to-red-800 text-white shadow-xl border border-iron-gold shadow-iron-red/50' 
+                  : 'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-iron-red/20 hover:via-iron-gold/10 hover:to-iron-red/20 border border-transparent hover:border-iron-gold/50'
               }`}
             >
               {/* Enhanced hover effect for non-active items */}
