@@ -45,17 +45,24 @@ const Navbar = () => {
             <Link
               key={item.name}
               to={item.path}
-              className={`px-6 py-3 rounded-lg transition-all duration-300 font-medium relative overflow-hidden group ${
+              className={`px-6 py-3 rounded-lg transition-all duration-500 font-medium relative overflow-hidden group ${
                 isActivePath(item.path) 
-                  ? 'bg-gradient-to-r from-iron-red to-red-700 text-white shadow-lg border border-iron-gold' 
-                  : 'text-text-secondary hover:text-iron-gold hover:bg-brand-hover'
+                  ? 'bg-gradient-to-br from-iron-red via-red-600 to-red-800 text-white shadow-2xl border-2 border-iron-gold shadow-iron-red/50' 
+                  : 'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-iron-red/20 hover:via-iron-gold/10 hover:to-iron-red/20 border-2 border-transparent hover:border-iron-gold/50'
               }`}
             >
-              {/* Hover effect for non-active items */}
+              {/* Enhanced hover effect for non-active items */}
               {!isActivePath(item.path) && (
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-iron-gold to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                <>
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-iron-gold to-transparent opacity-0 group-hover:opacity-20 transition-all duration-500 transform -translate-x-full group-hover:translate-x-full" />
+                  <span className="absolute inset-0 bg-gradient-to-b from-iron-red/10 via-transparent to-iron-gold/10 opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
+                </>
               )}
-              <span className="relative z-10">{item.name}</span>
+              {/* Active item glow effect */}
+              {isActivePath(item.path) && (
+                <span className="absolute inset-0 bg-gradient-to-r from-iron-gold/20 via-transparent to-iron-gold/20 animate-pulse" />
+              )}
+              <span className="relative z-10 font-semibold tracking-wide">{item.name}</span>
             </Link>
           ))}
         </nav>
