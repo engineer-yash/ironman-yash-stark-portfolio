@@ -1,10 +1,11 @@
 {
   "version": 2,
   "name": "tony-stark-portfolio",
-  "buildCommand": "cd frontend && npm run build",
+  "buildCommand": "cd frontend && yarn build",
   "outputDirectory": "frontend/build",
-  "installCommand": "cd frontend && npm install",
-  "devCommand": "cd frontend && npm start",
+  "installCommand": "cd frontend && yarn install --frozen-lockfile",
+  "devCommand": "cd frontend && yarn start",
+  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
