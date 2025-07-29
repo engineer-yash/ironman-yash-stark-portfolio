@@ -52,7 +52,7 @@ const About = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left - Profile Image & Basic Info */}
           <div className="space-y-8">
             <div className="hud-element p-8 text-center">
