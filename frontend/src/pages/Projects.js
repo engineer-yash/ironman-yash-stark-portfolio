@@ -78,7 +78,7 @@ const Projects = () => {
         </div>
 
         {/* Selected Project Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
           {/* Project Info */}
           <div className="space-y-8">
             <div className="hud-element">
