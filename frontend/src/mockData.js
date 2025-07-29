@@ -62,7 +62,7 @@ export const projects = [
     type: "College Project",
     duration: "Dec 2022 – Feb 2023",
     status: "Completed",
-    description: "Designed and implemented responsive registration portal for a national-level college event.",
+    description: "Designed and implemented a responsive registration portal for a national-level college event.",
     technologies: ["HTML5", "CSS3", "JavaScript", "QR Code Integration", "Email APIs"],
     features: [
       "Responsive registration portal",
@@ -81,8 +81,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Dairy Farm Management System",
-    type: "Hackathon Project",
+    title: "Smart India Hackathon 2022 Project",
+    type: "Dairy Farm Management System",
     duration: "Apr 2022 – Aug 2022", 
     status: "Winner - National Level",
     description: "Real-time farm management system developed for Smart India Hackathon as part of a 6-member team.",
@@ -145,7 +145,7 @@ export const certifications = [
   {
     id: 3,
     title: "Specialization in Artificial Intelligence & Machine Learning",
-    issuer: "Academic Institution",
+    issuer: "Gujarat Technological University",
     date: "Aug 2022 – May 2024",
     type: "Specialization Certificate", 
     description: "Advanced coursework in AI/ML concepts and practical implementation",
@@ -157,7 +157,7 @@ export const jarvisResponses = {
   greeting: [
     "Good evening, Mr. Stark. JARVIS at your service.",
     "Welcome to the digital workshop of Yash Gohel, also known as Tony Stark.",
-    "Systems online. All lab interfaces ready for your exploration."
+    "Systems online. All lab interfaces are ready for your exploration."
   ],
   about: [
     "Mr. Stark is a brilliant software engineer specializing in full-stack development, much like how you engineer your suits.",
@@ -190,9 +190,9 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/yash-gohel",
   instagram: "https://www.instagram.com/yashu_gohel_",
   email: "gohelyash11@gmail.com",
-  resume: "https://customer-assets.emergentagent.com/job_d2fbc2f2-d986-4d3f-926b-807d09caf343/artifacts/c05xlvku_Yash_Gohel_Resume.pdf",
+  resume: "https://drive.google.com/file/d/1DQDtX3UwyrN3FnMJBVafUzua_78pIRia/view?usp=sharing",
   blog1: "https://theonetechnologies.com/blog/post/best-practices-to-follow-for-creating-custom-web-solutions",
   blog2: "https://theonetechnologies.com/blog/post/2024-vision-the-future-of-web-development", 
   blog3: "https://theonetechnologies.com/blog/post/top-5-html-css-tools-to-boost-website-design-and-development-efficiency",
-  projectRepo: "#github-repo-coming-soon"
+  projectRepo: "https://github.com/engineer-yash/ironman-yash-stark-portfolio"
 };
