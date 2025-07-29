@@ -329,11 +329,11 @@ body {
   font-weight: 600;
 }
 
-/* Layout System - Full Width Dark Theme */
+/* Layout System - Full Width Mobile-First Design */
 .dark-full-container {
   width: 100%;
   margin: 0;
-  padding: 0 20px; /* Reduced from 7.6923% for full-width design */
+  padding: 0; /* Remove all side padding */
   background: var(--bg-primary);
 }
 
