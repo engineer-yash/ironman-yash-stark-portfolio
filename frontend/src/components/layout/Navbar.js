@@ -68,11 +68,11 @@ const Navbar = () => {
         </nav>
 
         {/* JARVIS Control */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           {/* JARVIS Toggle */}
           <button
             onClick={toggleJarvis}
-            className={`px-4 py-2 text-xs rounded-lg font-bold transition-all duration-500 relative overflow-hidden group transform hover:scale-105 ${
+            className={`px-3 py-2 text-xs rounded-lg font-bold transition-all duration-500 relative overflow-hidden group transform hover:scale-105 ${
               isActive 
                 ? 'bg-gradient-to-br from-iron-gold via-yellow-400 to-iron-gold text-bg-primary hover:from-yellow-300 hover:via-iron-gold hover:to-yellow-500 shadow-lg border border-iron-red shadow-iron-gold/50' 
                 : 'bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 text-gray-300 hover:from-gray-700 hover:via-gray-600 hover:to-gray-700 border border-gray-600 hover:border-iron-gold/50 shadow-md'
