@@ -193,7 +193,7 @@ const Home = () => {
 
       {/* Quick Overview Section */}
       <section className="py-12 lg:py-16 bg-bg-secondary mt-8 lg:mt-12">
-        <div className="dark-content-container">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 lg:mb-10">
             <h2 className="display-large mb-4 lg:mb-5">
               The <span className="iron-text">Stark</span> Workshop
