@@ -525,9 +525,45 @@ body {
 }
 
 /* Responsive Design */
+/* iPhone SE and smaller devices */
+@media (max-width: 375px) {
+  .dark-main {
+    padding-top: 70px;
+  }
+  
+  .dark-container {
+    padding: 0 12px;
+  }
+  
+  .dark-content-container {
+    padding: 0 12px;
+  }
+  
+  .dark-full-container {
+    padding: 0 12px;
+  }
+  
+  .display-huge { font-size: 28px; }
+  .display-large { font-size: 24px; }
+  .display-medium { font-size: 20px; }
+  .heading-1 { font-size: 22px; }
+  .heading-2 { font-size: 18px; }
+  .heading-3 { font-size: 16px; }
+  .body-large { font-size: 16px; }
+  .body-medium { font-size: 14px; }
+  .body-small { font-size: 12px; }
+  
+  /* Mobile-specific button adjustments for iPhone SE */
+  .btn-primary, .btn-secondary {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-height: 40px;
+  }
+}
+
 @media (max-width: 640px) {
   .dark-main {
-    padding-top: 64px; /* Slightly more space for mobile */
+    padding-top: 70px;
   }
   
   .dark-container {
@@ -535,6 +571,10 @@ body {
   }
   
   .dark-content-container {
+    padding: 0 16px;
+  }
+  
+  .dark-full-container {
     padding: 0 16px;
   }
   
