@@ -2,8 +2,6 @@
 
 A stunning Iron Man-inspired portfolio website showcasing the genius behind Yash Stark's engineering prowess. Experience the perfect fusion of cutting-edge web technology and Marvel's iconic aesthetic.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project)
-
 ## ✨ Live Demo
 
 🔗 **[View Live Portfolio](https://ironman-yash-stark.vercel.app)**
@@ -93,49 +91,6 @@ REACT_APP_BACKEND_URL=https://your-backend-url.com
 
 # Disable source maps in production
 GENERATE_SOURCEMAP=false
-```
-
-## 📦 Deployment
-
-### Deploy to Vercel (Recommended)
-
-**✅ This project is deployment-ready!**
-
-1. **Fork and Clone**
-   ```bash
-   git clone https://github.com/engineer-yash/ironman-yash-stark.git
-   cd ironman-yash-stark
-   ```
-
-2. **Push to GitHub**
-   - Create a new repository on GitHub
-   - Push your code to the repository
-
-3. **Deploy on Vercel**
-   - Connect your GitHub account to Vercel
-   - Import the project
-   - Configure build settings:
-     - Build Command: `cd frontend && yarn build`
-     - Output Directory: `frontend/build`
-     - Install Command: `cd frontend && yarn install`
-
-4. **Environment Variables (Optional)**
-   Add to your Vercel dashboard:
-   ```
-   GENERATE_SOURCEMAP=false
-   ```
-
-### Quick Deploy Button
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/engineer-yash/ironman-yash-stark&project-name=ironman-yash-stark&repository-name=ironman-yash-stark)
-
-### Manual Build
-
-```bash
-# Build for production
-cd frontend
-yarn build
-
-# The build folder contains the production-ready app
 ```
 
 ## 🎨 Customization
@@ -235,14 +190,6 @@ ironman-yash-stark/
 - **Tablet Compatibility**: Perfect rendering on iPad and similar devices
 - **Desktop Enhancement**: Full-featured experience on larger screens
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -268,7 +215,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Version 3.0 - Iron Man Enhancement
 - ✅ Updated title to "Iron Man - Yash Stark"
 - ✅ Added comprehensive SEO meta tags and keywords
-- ✅ Integrated Instagram social link
+- ✅ Added Instagram social link
 - ✅ Implemented new Iron Man logo as favicon and footer branding
 - ✅ Added scroll-to-top functionality for better UX
 - ✅ Fixed Vercel deployment configuration for ironman-yash-stark.vercel.app
