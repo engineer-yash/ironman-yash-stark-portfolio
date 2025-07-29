@@ -57,22 +57,22 @@ const Experience = () => {
             <div key={exp.id} className="relative">
               {/* Timeline Line */}
               {index < experience.length - 1 && (
-                <div className="absolute left-8 top-20 w-0.5 h-32 bg-brand-primary opacity-30" />
+                <div className="absolute left-6 sm:left-8 top-20 w-0.5 h-24 sm:h-32 bg-brand-primary opacity-30" />
               )}
               
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
                 {/* Timeline Marker */}
-                <div className="lg:col-span-2 flex items-center space-x-4">
+                <div className="lg:col-span-2 flex items-center space-x-3 sm:space-x-4">
                   <div className="arc-reactor">
-                    <div className="w-16 h-16 bg-brand-primary rounded-full flex items-center justify-center">
-                      <Briefcase className="w-8 h-8 text-white" />
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-brand-primary rounded-full flex items-center justify-center">
+                      <Briefcase className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
                   </div>
                 </div>
 
                 {/* Experience Card */}
                 <div className="lg:col-span-10">
-                  <div className="hud-element p-8">
+                  <div className="hud-element p-6 lg:p-8">
                     <div className="flex flex-col lg:flex-row justify-between items-start mb-6">
                       <div className="space-y-2">
                         <h2 className="display-medium text-brand-primary">{exp.title}</h2>
