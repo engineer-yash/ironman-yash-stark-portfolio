@@ -5,7 +5,7 @@ import { socialLinks } from '../../mockData';
 const Footer = () => {
   return (
     <footer className="bg-bg-secondary border-t border-border-subtle py-12">
-      <div className="dark-content-container">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
