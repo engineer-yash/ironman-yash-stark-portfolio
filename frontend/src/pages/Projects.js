@@ -205,8 +205,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center text-brand-primary text-sm">
-                  <span>Explore Project</span>
-                  <ExternalLink className="w-4 h-4 ml-2" />
+                  <span>View Project Details</span>
                 </div>
               </div>
             ))}
