@@ -257,9 +257,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Portfolio**: [Live Demo](https://your-portfolio-url.vercel.app)
-- **LinkedIn**: [Yash Gohel](https://linkedin.com/in/yashgohel)
-- **GitHub**: [GitHub Profile](https://github.com/yashgohel)
+- **Portfolio**: [Live Demo](https://ironman-yash-stark.vercel.app)
+- **LinkedIn**: [Yash Gohel](https://www.linkedin.com/in/yash-gohel)
+- **GitHub**: [engineer-yash](https://github.com/engineer-yash)
+- **Instagram**: [yashu_gohel_](https://www.instagram.com/yashu_gohel_)
 - **Email**: gohelyash11@gmail.com
 
 ## 🔄 Recent Updates
