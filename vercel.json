@@ -1,15 +1,27 @@
 {
   "version": 2,
   "name": "tony-stark-portfolio",
-  "buildCommand": "cd frontend && yarn build",
-  "outputDirectory": "frontend/build",
-  "installCommand": "cd frontend && yarn install --frozen-lockfile",
-  "devCommand": "cd frontend && yarn start",
-  "framework": null,
-  "rewrites": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "frontend/build/static/$1"
+    },
+    {
+      "src": "/(favicon\\.ico|robots\\.txt|manifest\\.json)",
+      "dest": "frontend/build/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/build/index.html"
     }
   ]
 }
