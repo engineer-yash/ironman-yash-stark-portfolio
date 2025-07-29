@@ -280,7 +280,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p><strong>Made with ❤️ and ⚡ by Tony Stark (Yash Gohel)</strong></p>
+  <p><strong>Made with ❤️ and ⚡ by Iron Man (Yash Stark)</strong></p>
   <p><em>"I am Iron Man." - Sometimes you gotta run before you can walk.</em></p>
   <p>⭐ Star this repository if you found it helpful!</p>
 </div>
