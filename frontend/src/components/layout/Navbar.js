@@ -86,7 +86,7 @@ const Navbar = () => {
             )}
             {/* Glow effect */}
             <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300 bg-gradient-to-br from-iron-red/20 via-transparent to-iron-gold/20" />
-            <span className="relative z-10 tracking-wider">
+            <span className="relative z-10 tracking-wider text-xs sm:text-sm">
               JARVIS {isActive ? 'ON' : 'OFF'}
             </span>
           </button>
