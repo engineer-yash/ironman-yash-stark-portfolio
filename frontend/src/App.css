@@ -87,7 +87,7 @@ body {
 }
 
 .dark-main {
-  padding-top: 80px; /* Fixed - was causing gap */
+  padding-top: 72px; /* Reduced from 80px to minimize gap */
   min-height: calc(100vh - 160px);
   position: relative;
   z-index: 1;
