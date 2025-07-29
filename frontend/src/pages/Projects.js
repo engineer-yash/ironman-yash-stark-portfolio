@@ -159,17 +159,7 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary dark-button-animate transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-brand-primary/50">
-                <ExternalLink className="w-5 h-5" />
-                <span>View Live Demo</span>
-              </button>
-              <button className="btn-secondary dark-button-animate transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gold/30">
-                <Github className="w-5 h-5" />
-                <span>View Source</span>
-              </button>
-            </div>
+
           </div>
         </div>
 
