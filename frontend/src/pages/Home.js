@@ -123,7 +123,7 @@ const Home = () => {
                 <div className="relative w-full h-full flex items-center justify-center">
                   <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                     <img
-                      src="https://images.unsplash.com/photo-1650299838565-bd570711dbe5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxyb2JvdCUyMGFybW9yfGVufDB8fHxyZWR8MTc1Mzc0NDg5M3ww&ixlib=rb-4.1.0&q=85"
+                      src="https://customer-assets.emergentagent.com/job_dd71168c-a0c9-4d0c-9ff0-288fcc6c3b45/artifacts/7t42ou3s_ai-generated-8229398_1280.png"
                       alt="Iron Man Suit Technology"
                       className="w-full h-full object-cover rounded-lg filter brightness-110 contrast-105 hover:scale-105 transition-transform duration-500"
                       style={{
