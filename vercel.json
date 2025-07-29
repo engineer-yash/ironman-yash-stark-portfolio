@@ -28,11 +28,6 @@
       "dest": "frontend/build/index.html"
     }
   ],
-  "functions": {
-    "frontend/build/**": {
-      "memory": 1024
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
