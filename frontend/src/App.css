@@ -87,7 +87,7 @@ body {
 }
 
 .dark-main {
-  padding-top: 50px; /* Further reduced for minimal gap */
+  padding-top: 58px; /* Just enough to clear the navbar without gap */
   min-height: calc(100vh - 120px);
   position: relative;
   z-index: 1;
