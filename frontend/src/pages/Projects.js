@@ -61,7 +61,7 @@ const Projects = () => {
         </div>
 
         {/* Project Navigation */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 lg:mb-12 px-4">
           {projects.map((project, index) => (
             <button
               key={project.id}
