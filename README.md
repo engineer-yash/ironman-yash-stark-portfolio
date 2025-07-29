@@ -103,8 +103,8 @@ GENERATE_SOURCEMAP=false
 
 1. **Fork and Clone**
    ```bash
-   git clone https://github.com/yourusername/tony-stark-portfolio.git
-   cd tony-stark-portfolio
+   git clone https://github.com/engineer-yash/ironman-yash-stark.git
+   cd ironman-yash-stark
    ```
 
 2. **Push to GitHub**
