@@ -87,7 +87,7 @@ body {
 }
 
 .dark-main {
-  padding-top: 70px; /* Reduced from various values, consistent across all screens */
+  padding-top: 60px; /* Reduced significantly from 70px */
   min-height: calc(100vh - 120px);
   position: relative;
   z-index: 1;
