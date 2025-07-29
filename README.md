@@ -1,23 +1,25 @@
-# 🦾 Tony Stark Portfolio - Yash Gohel
+# 🦾 Iron Man - Yash Stark Portfolio
 
-A stunning Iron Man-inspired portfolio website showcasing the genius behind Tony Stark's engineering prowess. Experience the perfect fusion of cutting-edge web technology and Marvel's iconic aesthetic.
+A stunning Iron Man-inspired portfolio website showcasing the genius behind Yash Stark's engineering prowess. Experience the perfect fusion of cutting-edge web technology and Marvel's iconic aesthetic.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project)
 
 ## ✨ Live Demo
 
-🔗 **[View Live Portfolio](https://your-portfolio-url.vercel.app)**
+🔗 **[View Live Portfolio](https://ironman-yash-stark.vercel.app)**
 
 ## 🚀 Features
 
 - **🎨 Marvel-Themed Design**: Complete Iron Man aesthetic with arc reactor glow effects, holographic text, and HUD-style interfaces
 - **🤖 JARVIS Integration**: Interactive AI assistant with voice synthesis
 - **⚡ Enhanced Navigation**: Smooth gradient animations and hover effects
-- **📱 Fully Responsive**: Optimized for all devices and screen sizes
+- **📱 Fully Responsive**: Optimized for all devices and screen sizes including iPhone SE
 - **🎭 Marvel Background Effects**: Comic book-style animations and hexagon patterns
 - **🔥 Performance Optimized**: Fast loading times and optimal user experience
 - **📧 Contact Form**: Integrated FormSubmit for direct email communication
 - **🎯 Professional Showcase**: Dynamic project presentation and resume download
+- **🔄 Scroll-to-Top Navigation**: Automatic scroll to top when navigating between pages
+- **🔗 Social Integration**: Complete social media integration (GitHub, LinkedIn, Instagram)
 
 ## 🛠️ Tech Arsenal
 
