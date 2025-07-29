@@ -50,7 +50,7 @@ export const experience = [
       "Resolved over 95% of QA bugs using the Sentry Platform in collaboration with senior developers, enhancing stability",
       "Used GitLab for source control and CI/CD pipelines, streamlining deployment workflows"
     ],
-    technologies: ["ASP.NET Core", "SQL Server", "React", "GitLab", "Sentry", "JIRA"],
+    technologies: ["ASP.NET Core", "SQL Server", "GitLab", "Sentry", "JIRA"],
     starkEquivalent: "Like developing the Mark 42 suit - iterative improvements with each deployment"
   }
 ];
@@ -177,11 +177,11 @@ export const jarvisResponses = {
 };
 
 export const achievements = [
-  "95%+ bug resolution rate across all projects",
-  "40% performance improvement in web applications",
-  "National level hackathon winner", 
-  "2x increase in event registrations for SpectrOm'23",
+  "National level Smart India Hackathon winner", 
   "Led 6-member development team successfully",
+  "95%+ bug resolution rate across all projects",
+  "2x increase in event registrations for SpectrOm'23",
+  "40% performance improvement in web applications",
   "Delivered 20+ sprint tasks ahead of deadlines"
 ];
 
