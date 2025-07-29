@@ -631,7 +631,7 @@ body {
   }
   
   .dark-container {
-    padding: 60px 0 0; /* Remove side padding, keep top only */
+    padding: 50px 0 0; /* Reduced top padding to match dark-main */
   }
   
   .dark-full-container {
