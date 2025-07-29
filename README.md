@@ -97,6 +97,8 @@ GENERATE_SOURCEMAP=false
 
 ### Deploy to Vercel (Recommended)
 
+**✅ This project is deployment-ready!**
+
 1. **Fork and Clone**
    ```bash
    git clone https://github.com/yourusername/tony-stark-portfolio.git
@@ -115,12 +117,14 @@ GENERATE_SOURCEMAP=false
      - Output Directory: `frontend/build`
      - Install Command: `cd frontend && yarn install`
 
-4. **Environment Variables**
+4. **Environment Variables (Optional)**
    Add to your Vercel dashboard:
    ```
-   REACT_APP_BACKEND_URL=your-backend-url
    GENERATE_SOURCEMAP=false
    ```
+
+### Quick Deploy Button
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/tony-stark-portfolio&project-name=tony-stark-portfolio&repository-name=tony-stark-portfolio)
 
 ### Manual Build
 
