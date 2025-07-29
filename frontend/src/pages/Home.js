@@ -54,7 +54,7 @@ const Home = () => {
       <div className="relative z-10">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-16 sm:pt-20">
-        <div className="dark-full-container">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-6 lg:space-y-8">
