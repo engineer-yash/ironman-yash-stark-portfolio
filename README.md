@@ -185,7 +185,7 @@ export const projects = [
 ## 📁 Project Structure
 
 ```
-tony-stark-portfolio/
+ironman-yash-stark/
 ├── frontend/                    # React frontend application
 │   ├── src/
 │   │   ├── components/         # Reusable UI components
