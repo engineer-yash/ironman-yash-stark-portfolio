@@ -190,7 +190,7 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/yash-gohel",
   instagram: "https://www.instagram.com/yashu_gohel_",
   email: "gohelyash11@gmail.com",
-  resume: "https://drive.google.com/file/d/1jXqO9OREqjFi-exGC-K5oh8BaTjw2KZP/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1K3tUt51PN8PY3TKqJfvOVPCLZ_7ue2ZO/view?usp=drivesdk",
   blog1: "https://theonetechnologies.com/blog/post/best-practices-to-follow-for-creating-custom-web-solutions",
   blog2: "https://theonetechnologies.com/blog/post/2024-vision-the-future-of-web-development", 
   blog3: "https://theonetechnologies.com/blog/post/top-5-html-css-tools-to-boost-website-design-and-development-efficiency",
