@@ -8,7 +8,7 @@
 export const personalInfo = {
   name: "Yash Gohel",
   alias: "Yash Stark",
-  title: ".NET Developer | C# | ASP.NET MVC | SQL Server | WPF | REST APIs",
+  title: ".NET Developer | C# | ASP.NET MVC | SQL Server | React | Generative AI",
   heroTitle: ".NET Developer | Full-Stack Engineer",
   tagline:
     "Engineering scalable applications, intelligent solutions, and modern digital experiences.",
