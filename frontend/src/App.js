@@ -4,6 +4,7 @@ import { Toaster } from './components/ui/toaster';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import SmoothScroll from './components/SmoothScroll';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -19,6 +20,7 @@ function App() {
   return (
     <JarvisProvider>
       <Router>
+        <SmoothScroll />
         <div className="App dark-container">
           <ScrollToTop />
           <Navbar />

@@ -1,41 +1,39 @@
-/* Tony Stark / Iron Man Inspired Dark Theme */
+/* ============================================================
+   STARK INDUSTRIES DESIGN SYSTEM — Iron Man Red / Gold / Arc Blue
+   Typography: Orbitron (display) · Sora (UI/body) · JetBrains Mono (HUD)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 /* Core Visual System */
 :root {
-  /* Backgrounds - Iron Man Theme Foundation */
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a1a;
+  --bg-primary: #070709;
+  --bg-secondary: #121217;
   --bg-overlay: rgba(220, 20, 60, 0.1);
-  
-  /* Text - High Contrast for Dark Theme */
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-muted: #888888;
-  
-  /* Borders - Iron Man Theme */
-  --border-subtle: rgba(220, 20, 60, 0.25);
-  --border-medium: rgba(220, 20, 60, 0.4);
-  
-  /* MAIN ACCENT COLORS - Iron Man Theme */
-  --brand-primary: #DC143C;        /* Iron Man Red */
-  --brand-hover: rgba(220, 20, 60, 0.2);
-  --brand-active: #B22222;
-  
-  /* Arc Reactor Blue */
-  --arc-blue: #00D4FF;
-  --arc-blue-glow: rgba(0, 212, 255, 0.4);
-  
-  /* Iron Man Red/Gold */
-  --iron-red: #DC143C;
-  --iron-gold: #FFD700;
-  
-  /* Iron Man Interface - Gold theme */
-  --jarvis-green: #FFD700;         /* Gold instead of green */
-  --jarvis-glow: rgba(255, 215, 0, 0.3);
-}
 
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.82);
+  --text-muted: #8a8a93;
+
+  --border-subtle: rgba(220, 20, 60, 0.22);
+  --border-medium: rgba(220, 20, 60, 0.4);
+
+  --brand-primary: #dc143c;
+  --brand-hover: rgba(220, 20, 60, 0.18);
+  --brand-active: #b22222;
+
+  --arc-blue: #00d4ff;
+  --arc-blue-glow: rgba(0, 212, 255, 0.4);
+
+  --iron-red: #dc143c;
+  --iron-gold: #ffd700;
+
+  --jarvis-green: #ffd700;
+  --jarvis-glow: rgba(255, 215, 0, 0.3);
+
+  --font-display: 'Orbitron', 'Sora', sans-serif;
+  --font-body: 'Sora', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Sora', monospace;
+}
 
 * {
   margin: 0;
@@ -44,12 +42,17 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body);
   background: var(--bg-primary);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(220, 20, 60, 0.55);
+  color: #fff;
 }
 
 /* App Container with Iron Man Background */
@@ -61,7 +64,7 @@ body {
 
 .dark-container {
   background: var(--bg-primary);
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 80%, rgba(220, 20, 60, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(0, 212, 255, 0.03) 0%, transparent 50%),
@@ -70,7 +73,6 @@ body {
   min-height: 100vh;
 }
 
-/* Add Iron Man circuit pattern overlay */
 .dark-container::before {
   content: '';
   position: fixed;
@@ -78,7 +80,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     linear-gradient(90deg, transparent 98%, rgba(220, 20, 60, 0.03) 100%),
     linear-gradient(0deg, transparent 98%, rgba(255, 215, 0, 0.02) 100%);
   background-size: 50px 50px;
@@ -87,118 +89,116 @@ body {
 }
 
 .dark-main {
-  padding-top: 58px; /* Just enough to clear the navbar without gap */
+  padding-top: 58px;
   min-height: calc(100vh - 120px);
   position: relative;
   z-index: 1;
 }
 
-/* Typography System - High Contrast Dark Theme */
-.display-huge { 
-  font-size: 66px; 
-  font-weight: 600; 
-  line-height: 1.1; 
-  letter-spacing: -0.62px; 
-  color: var(--text-primary); 
+/* Typography System */
+.display-huge {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6.5vw, 4.75rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
 }
 
-.display-large { 
-  font-size: 48px; 
-  font-weight: 600; 
-  line-height: 1.1; 
-  letter-spacing: -0.02em; 
-  color: var(--text-primary); 
+.display-large {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
 }
 
-.display-medium { 
-  font-size: 32px; 
-  font-weight: 600; 
-  line-height: 1.25; 
-  letter-spacing: -0.01em; 
-  color: var(--text-primary); 
+.display-medium {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.22;
+  color: var(--text-primary);
 }
 
-.heading-1 { 
-  font-size: 28px; 
-  font-weight: 600; 
-  line-height: 1.2; 
-  letter-spacing: -0.005em; 
-  color: var(--text-primary); 
+.heading-1 {
+  font-family: var(--font-body);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
 }
 
-.heading-2 { 
-  font-size: 24px; 
-  font-weight: 600; 
-  line-height: 1.3; 
-  letter-spacing: -0.02em; 
-  color: var(--text-primary); 
+.heading-2 {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
 }
 
-.heading-3 { 
-  font-size: 20px; 
-  font-weight: 600; 
-  line-height: 1.4; 
-  letter-spacing: 0; 
-  color: var(--text-primary); 
+.heading-3 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
 }
 
-.body-large { 
-  font-size: 20px; 
-  font-weight: 500; 
-  line-height: 1.5; 
-  letter-spacing: 0; 
-  color: var(--text-primary); 
+.body-large {
+  font-family: var(--font-body);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-primary);
 }
 
-.body-medium { 
-  font-size: 18px; 
-  font-weight: 400; 
-  line-height: 1.5; 
-  letter-spacing: 0; 
-  color: var(--text-secondary); 
-}
-
-.body-small { 
-  font-size: 16px; 
-  font-weight: 400; 
-  line-height: 1.4; 
-  letter-spacing: 0; 
-  color: var(--text-secondary); 
-}
-
-.body-muted { 
-  font-size: 16px; 
-  font-weight: 400; 
-  line-height: 1.4; 
-  letter-spacing: 0; 
-  color: var(--text-muted); 
-}
-
-.button-text { 
-  font-size: 18px; 
-  font-weight: 500; 
-  line-height: 1.2; 
-  letter-spacing: 0; 
-}
-
-.nav-text { 
-  font-size: 18px; 
-  font-weight: 400; 
-  line-height: 1.4; 
-  letter-spacing: 0; 
-}
-
-/* Button Components - Marvel Iron Man Style */
-.btn-primary {
-  background: linear-gradient(135deg, var(--iron-red) 0%, #B22222 100%);
-  color: #FFFFFF;
-  border: 2px solid var(--iron-gold);
-  border-radius: 8px;
-  padding: 12px 24px;
+.body-medium {
+  font-family: var(--font-body);
   font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.body-small {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.body-muted {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* HUD label — terminal-style eyebrow text */
+.hud-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--iron-gold);
+}
+
+/* Buttons — Iron Man Style */
+.btn-primary {
+  background: linear-gradient(135deg, var(--iron-red) 0%, #b22222 100%);
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 215, 0, 0.75);
+  border-radius: 10px;
+  padding: 13px 26px;
+  font-family: var(--font-body);
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
   min-height: 48px;
   text-decoration: none;
   display: inline-flex;
@@ -206,9 +206,9 @@ body {
   justify-content: center;
   gap: 8px;
   line-height: 1.2;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
+  box-shadow: 0 4px 18px rgba(220, 20, 60, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -229,28 +229,28 @@ body {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #B22222 0%, var(--iron-red) 100%);
+  background: linear-gradient(135deg, #b22222 0%, var(--iron-red) 100%);
   border-color: var(--iron-gold);
-  box-shadow: 0 6px 25px rgba(220, 20, 60, 0.5);
-  transform: translateY(-3px);
-  color: #FFFFFF;
+  box-shadow: 0 6px 26px rgba(220, 20, 60, 0.5);
+  transform: translateY(-2px);
+  color: #ffffff;
 }
 
 .btn-primary:active {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);
+  transform: translateY(0);
 }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(255, 215, 0, 0.04);
   color: var(--iron-gold);
-  border: 2px solid var(--iron-gold);
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: 16px;
+  border: 1.5px solid rgba(255, 215, 0, 0.7);
+  border-radius: 10px;
+  padding: 13px 26px;
+  font-family: var(--font-body);
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
   min-height: 48px;
   text-decoration: none;
   display: inline-flex;
@@ -258,7 +258,7 @@ body {
   justify-content: center;
   gap: 8px;
   line-height: 1.2;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
@@ -282,15 +282,15 @@ body {
 .btn-secondary:hover {
   background: var(--iron-gold);
   color: var(--bg-primary);
-  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
-  transform: translateY(-3px);
+  box-shadow: 0 4px 22px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-secondary:active {
-  transform: translateY(-1px);
+  transform: translateY(0);
 }
 
-/* Arc Reactor Glow Effect - Iron Man Style */
+/* Arc Reactor Glow Effect */
 .arc-reactor {
   position: relative;
   display: inline-block;
@@ -316,39 +316,39 @@ body {
 
 /* Iron Man Interface Elements */
 .iron-interface {
-  border: 2px solid var(--iron-red);
-  background: rgba(220, 20, 60, 0.05);
-  box-shadow: 0 0 15px rgba(220, 20, 60, 0.2);
-  border-radius: 8px;
+  border: 1.5px solid rgba(220, 20, 60, 0.55);
+  background: linear-gradient(160deg, rgba(220, 20, 60, 0.07) 0%, rgba(10, 10, 12, 0.6) 100%);
+  box-shadow: 0 0 18px rgba(220, 20, 60, 0.16), inset 0 1px 0 rgba(255, 215, 0, 0.08);
+  border-radius: 10px;
 }
 
 .iron-text {
   color: var(--iron-gold);
-  font-family: 'Inter', sans-serif;
-  text-shadow: 0 0 3px var(--iron-gold);
+  font-family: var(--font-mono);
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.45);
   font-weight: 600;
 }
 
-/* Layout System - Full Width Mobile-First Design */
+/* Layout System */
 .dark-full-container {
   width: 100%;
   margin: 0;
-  padding: 0; /* Remove all side padding */
+  padding: 0;
   background: var(--bg-primary);
 }
 
 .dark-content-container {
-  max-width: 1400px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .dark-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 60px 40px;
-  padding: 60px 0;
-  max-width: 1400px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  padding: 40px 0;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -356,142 +356,235 @@ body {
 .space-large { margin: 60px; }
 .space-xlarge { margin: 100px; }
 .space-xxlarge { margin: 160px; }
-
 .pad-large { padding: 60px; }
 .pad-xlarge { padding: 100px; }
 .pad-xxlarge { padding: 160px; }
 
-/* Dark Theme Button Animation - Enhanced */
+/* Button Animations */
 .dark-button-animate {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
 
-.dark-button-animate::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
-  transition: left 0.6s;
-}
-
-.dark-button-animate:hover::before {
-  left: 100%;
-}
-
 .dark-button-animate:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(220, 20, 60, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(220, 20, 60, 0.35);
 }
 
-/* Dark Theme Hover Effects - Enhanced */
 .dark-hover {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.35s;
   position: relative;
 }
 
 .dark-hover:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 
-    0 20px 40px rgba(220, 20, 60, 0.25),
-    0 0 20px rgba(255, 215, 0, 0.1);
+  transform: translateY(-4px);
+  border-color: rgba(255, 215, 0, 0.55);
+  box-shadow:
+    0 18px 38px rgba(220, 20, 60, 0.22),
+    0 0 22px rgba(255, 215, 0, 0.08);
 }
 
-.dark-hover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 8px;
-  background: linear-gradient(45deg, var(--iron-red), transparent, var(--iron-gold));
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: -1;
-  margin: -2px;
-}
-
-.dark-hover:hover::after {
-  opacity: 0.3;
-}
-
-/* Text Color Utilities */
+/* Utility color classes */
 .text-text-secondary { color: var(--text-secondary); }
 .text-text-muted { color: var(--text-muted); }
 .text-brand-primary { color: var(--brand-primary); }
 
-/* Background Color Utilities */
 .bg-bg-secondary { background-color: var(--bg-secondary); }
 .bg-brand-primary { background-color: var(--brand-primary); }
 .bg-brand-hover { background-color: var(--brand-hover); }
 
-/* Border Utilities */
 .border-brand-primary { border-color: var(--brand-primary); }
 .border-border-subtle { border-color: var(--border-subtle); }
 .border-gold { border-color: var(--iron-gold); }
 
-/* JARVIS Interface - Golden Theme */
+/* JARVIS Interface — Gold HUD */
 .jarvis-interface {
-  border: 2px solid var(--iron-gold);
-  background: linear-gradient(135deg, 
-    rgba(255, 215, 0, 0.05) 0%, 
-    rgba(220, 20, 60, 0.03) 50%, 
-    rgba(0, 212, 255, 0.02) 100%);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+  border: 1.5px solid rgba(255, 215, 0, 0.55);
+  background: linear-gradient(150deg,
+    rgba(255, 215, 0, 0.05) 0%,
+    rgba(220, 20, 60, 0.03) 55%,
+    rgba(0, 212, 255, 0.03) 100%);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.12);
+  border-radius: 10px;
   position: relative;
-}
-
-.jarvis-interface::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, var(--iron-gold), transparent, var(--iron-red));
-  z-index: -1;
-  opacity: 0.4;
-  border-radius: inherit;
 }
 
 .jarvis-text {
   color: var(--iron-gold);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-mono);
   text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
   font-weight: 600;
 }
 
-.text-jarvis-green { 
-  color: var(--jarvis-green); 
+.text-jarvis-green {
+  color: var(--jarvis-green);
 }
 
-/* HUD-style elements - Iron Man */
+/* HUD Cards — refined glass panels with corner accents */
 .hud-element {
-  border: 2px solid var(--iron-red);
-  background: rgba(220, 20, 60, 0.05);
+  border: 1.5px solid rgba(220, 20, 60, 0.45);
+  background: linear-gradient(160deg, rgba(220, 20, 60, 0.055) 0%, rgba(18, 18, 23, 0.75) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: relative;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 24px;
+  border-radius: 12px;
 }
 
-.hud-element::before {
+.hud-element::after {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, var(--iron-red), transparent, var(--iron-gold));
-  z-index: -1;
-  opacity: 0.3;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--iron-gold), var(--iron-gold)) top left / 16px 1.5px,
+    linear-gradient(var(--iron-gold), var(--iron-gold)) top left / 1.5px 16px,
+    linear-gradient(var(--iron-red), var(--iron-red)) bottom right / 16px 1.5px,
+    linear-gradient(var(--iron-red), var(--iron-red)) bottom right / 1.5px 16px;
+  background-repeat: no-repeat;
+  opacity: 0.55;
   border-radius: 8px;
 }
 
-/* Animation System - Enhanced Iron Man Theme */
+/* Skill chips — neutral treatment, no proficiency bars */
+.skill-chip {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 9px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(220, 20, 60, 0.38);
+  background: rgba(220, 20, 60, 0.06);
+  color: var(--text-primary);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  cursor: default;
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 215, 0, 0.7);
+  background: rgba(255, 215, 0, 0.07);
+  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.12);
+}
+
+/* Status badges */
+.status-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-live {
+  color: #7dfcb2;
+  border: 1px solid rgba(125, 252, 178, 0.4);
+  background: rgba(125, 252, 178, 0.08);
+}
+
+.status-live::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #7dfcb2;
+  box-shadow: 0 0 8px #7dfcb2;
+  animation: arc-pulse 2.4s infinite;
+}
+
+.status-winner {
+  color: var(--iron-gold);
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  background: rgba(255, 215, 0, 0.08);
+}
+
+.status-neutral {
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Availability indicator (renders only when personalInfo.availability is set) */
+.availability-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  background: rgba(0, 212, 255, 0.07);
+  color: var(--arc-blue);
+}
+
+.availability-badge::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--arc-blue);
+  box-shadow: 0 0 10px var(--arc-blue);
+  animation: arc-pulse 2.4s infinite;
+}
+
+/* Editorial marquee — slow tech ticker */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 55s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-item {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 28px;
+  white-space: nowrap;
+}
+
+.marquee-item::after {
+  content: '◆';
+  color: rgba(220, 20, 60, 0.6);
+  font-size: 8px;
+  margin-left: 56px;
+}
+
+/* Transitions & hover */
 .iron-transition {
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .iron-hover:hover {
@@ -500,18 +593,18 @@ body {
 }
 
 .iron-button-animate {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .iron-button-animate:hover {
   transform: translateY(-2px);
 }
 
-/* Hologram effect - Iron Man style */
+/* Hologram effect */
 .hologram {
   position: relative;
   color: var(--iron-red);
-  text-shadow: 0 0 10px var(--iron-red);
+  text-shadow: 0 0 18px rgba(220, 20, 60, 0.55);
 }
 
 .hologram::before {
@@ -521,142 +614,70 @@ body {
   left: 0;
   color: var(--iron-gold);
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.28;
+}
+
+/* Hero masked line reveal */
+.mask-line {
+  display: block;
+  overflow: hidden;
+}
+
+.mask-line > span {
+  display: block;
+  will-change: transform;
+}
+
+/* Timeline connector */
+.timeline-rail {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(220, 20, 60, 0.55), rgba(255, 215, 0, 0.25), transparent);
 }
 
 /* Responsive Design */
-/* iPhone SE and smaller devices */
 @media (max-width: 375px) {
-  .dark-main {
-    padding-top: 58px; /* Just enough to clear navbar */
-  }
-  
-  .dark-container {
-    padding: 0; /* Remove all side padding */
-  }
-  
-  .dark-content-container {
-    padding: 0 12px; /* Minimal padding only for content */
-  }
-  
-  .dark-full-container {
-    padding: 0; /* Full width */
-  }
-  
-  .display-huge { font-size: 28px; }
-  .display-large { font-size: 24px; }
-  .display-medium { font-size: 20px; }
-  .heading-1 { font-size: 22px; }
-  .heading-2 { font-size: 18px; }
-  .heading-3 { font-size: 16px; }
-  .body-large { font-size: 16px; }
-  .body-medium { font-size: 14px; }
-  .body-small { font-size: 12px; }
-  
-  /* Mobile-specific button adjustments for iPhone SE */
-  .btn-primary, .btn-secondary {
-    padding: 8px 16px;
-    font-size: 13px;
-    min-height: 40px;
-  }
+  .dark-main { padding-top: 58px; }
+  .dark-container { padding: 0; }
+  .dark-content-container { padding: 0 12px; }
+  .btn-primary, .btn-secondary { padding: 10px 16px; font-size: 13px; min-height: 42px; }
 }
 
 @media (max-width: 640px) {
-  .dark-main {
-    padding-top: 58px; /* Just enough to clear navbar */
-  }
-  
-  .dark-container {
-    padding: 0; /* Remove all side padding */
-  }
-  
-  .dark-content-container {
-    padding: 0 16px; /* Only content needs minimal padding */
-  }
-  
-  .dark-full-container {
-    padding: 0; /* Full width */
-  }
-  
-  .display-huge { font-size: 32px; }
-  .display-large { font-size: 28px; }
-  .display-medium { font-size: 22px; }
-  .heading-1 { font-size: 24px; }
-  .heading-2 { font-size: 20px; }
-  .heading-3 { font-size: 18px; }
-  .body-large { font-size: 18px; }
-  .body-medium { font-size: 16px; }
-  .body-small { font-size: 14px; }
-}
-
-@media (min-width: 641px) and (max-width: 768px) {
-  .dark-main {
-    padding-top: 58px; /* Consistent minimal gap */
-  }
-  
-  .display-huge { font-size: 44px; }
-  .display-large { font-size: 36px; }
-  .display-medium { font-size: 28px; }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .dark-main {
-    padding-top: 58px; /* Consistent minimal gap */
-  }
-  
-  .display-huge { font-size: 56px; }
-  .display-large { font-size: 42px; }
-  .display-medium { font-size: 30px; }
-}
-
-@media (min-width: 768px) {
-  .dark-grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .dark-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 60px 40px;
-  }
+  .dark-main { padding-top: 58px; }
+  .dark-container { padding: 0; }
+  .dark-content-container { padding: 0 16px; }
+  .hud-element { padding: 18px; }
+  .jarvis-interface { padding: 18px; }
+  .timeline-rail { display: none; }
 }
 
 @media (max-width: 767px) {
   .dark-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 30px 0;
+    gap: 24px;
+    padding: 24px 0;
   }
-  
-  .dark-container {
-    padding: 58px 0 0; /* Match dark-main padding */
+  .dark-container { padding: 58px 0 0; }
+}
+
+@media (min-width: 768px) {
+  .dark-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
   }
-  
-  .dark-full-container {
-    padding: 0; /* Full width */
-  }
-  
-  .hud-element {
-    padding: 16px;
-    margin: 0 16px; /* Add margin instead of container padding */
-  }
-  
-  .jarvis-interface {
-    padding: 16px;
-    margin: 0 16px; /* Add margin instead of container padding */
-  }
-  
-  .iron-interface {
-    padding: 16px;
-    margin: 0 16px; /* Add margin instead of container padding */
-  }
-  
-  /* Mobile-specific button adjustments */
-  .btn-primary, .btn-secondary {
-    padding: 10px 20px;
-    font-size: 14px;
-    min-height: 44px;
-  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .arc-reactor::before,
+  .status-live::before,
+  .availability-badge::before { animation: none; }
+  .dark-hover:hover,
+  .dark-button-animate:hover,
+  .iron-hover:hover { transform: none; }
 }
