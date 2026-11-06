@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Code, Layers, Globe, Database, Cloud, Target, Bot, Zap } from 'lucide-react';
 import { skillCategories } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
+import BackgroundEffects from '../components/BackgroundEffects';
 import { useJarvis } from '../context/JarvisContext';
 
 const categoryIcons = { Code, Layers, Globe, Database, Cloud, Target, Bot };
@@ -34,7 +34,7 @@ const Skills = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

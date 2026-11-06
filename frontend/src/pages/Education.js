@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { GraduationCap, Calendar, Award, Lightbulb, Trophy, Lightbulb as Bulb } from 'lucide-react';
 import { education } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
 import { useJarvis } from '../context/JarvisContext';
+import BackgroundEffects from '../components/BackgroundEffects';
 
 const Education = () => {
   const { speak, isActive } = useJarvis();
@@ -37,7 +37,7 @@ const Education = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

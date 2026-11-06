@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Calendar, Award, Zap, CheckCircle } from 'lucide-react';
 import { projects } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
+import BackgroundEffects from '../components/BackgroundEffects';
 import { useJarvis } from '../context/JarvisContext';
 
 const statusClass = (status) => {
@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

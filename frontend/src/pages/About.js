@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { User, MapPin, Mail, Zap, Target, Heart } from 'lucide-react';
 import { personalInfo } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
 import { useJarvis } from '../context/JarvisContext';
+import BackgroundEffects from '../components/BackgroundEffects';
 
 const About = () => {
   const { speak, isActive } = useJarvis();
@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

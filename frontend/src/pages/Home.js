@@ -7,9 +7,10 @@ import {
 } from 'lucide-react';
 import { personalInfo, skillCategories, achievements, socialLinks } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
 import { useJarvis } from '../context/JarvisContext';
 import JarvisAssistant from '../components/JarvisAssistant';
+import BackgroundEffects from '../components/BackgroundEffects';
+
 
 const achievementIcons = { Trophy, Users, Gauge, Rocket, Bot };
 const heroEase = [0.22, 1, 0.36, 1];
@@ -76,7 +77,7 @@ const Home = () => {
 
   return (
     <div className="dark-container min-h-screen relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="relative z-10">
         {/* ============ HERO ============ */}

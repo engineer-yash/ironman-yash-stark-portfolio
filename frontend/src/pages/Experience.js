@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { Calendar, MapPin, ExternalLink, Trophy, Briefcase, Users, Gauge } from 'lucide-react';
 import { experience, achievements } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
 import { useJarvis } from '../context/JarvisContext';
+import BackgroundEffects from '../components/BackgroundEffects';
+
 
 const highlightIcons = { Trophy, Users, Gauge };
 
@@ -21,7 +22,7 @@ const Experience = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { Award, Calendar, ExternalLink, Link2, Trophy, CheckCircle } from 'lucide-react';
 import { certifications } from '../mockData';
 import Reveal from '../components/Reveal';
-import AmbientFX from '../components/AmbientFX';
 import { useJarvis } from '../context/JarvisContext';
+import BackgroundEffects from '../components/BackgroundEffects';
+
 
 const Certifications = () => {
   const { speak, isActive } = useJarvis();
@@ -25,7 +26,7 @@ const Certifications = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
 
       <div className="dark-content-container relative z-10">
         {/* Header */}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Send, MessageSquare, User } from 'lucide-react';
 import { personalInfo, socialLinks } from '../mockData';
 import { useJarvis } from '../context/JarvisContext';
+import BackgroundEffects from '../components/BackgroundEffects';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -108,7 +109,7 @@ const Contact = () => {
 
   return (
     <div className="dark-container min-h-screen py-20 relative">
-      <AmbientFX />
+      <BackgroundEffects />
       
       <div className="dark-content-container relative z-10">
         {/* Header */}
